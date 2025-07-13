@@ -6,7 +6,7 @@ on:
     workflow_dispatch:
 
 env:
-    INSTANCE: 'Writerside/ERA-Engine (Godot) Document'
+    INSTANCE: 'Writerside/ERA-Engine-Godot-Document'
     # DOCKER_VERSION: 'XXX.YYYYY' # Comment to let GitHub Action decide
     # IS_GROUP: 'true'  # Uncomment to build a group
 
