@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Design of ERA-Engine (Godot)" id="Design-of-ERA-Engine-Godot">
+
+    <p>The system architecture and design principle of ERA-Engine (Godot).</p>
+
+	<show-structure for="chapter" />
+
+	<chapter id="Introduction.DesignIntro.Design">
+		<title>Design Principle</title>
+
+		<chapter id="Introduction.DesignIntro.FSM" collapsible="true">
+			<title>Finite State Machine (FSM)</title>
+
+			<p>
+				<code>Finite State Machine</code> (<code>FSM</code>) is a system that has a finite number of states. It is a model of computation used to design both computer programs and sequential logic circuits.
+			</p>
+
+			<p>
+				All data, status and other information of the programme can be regarded as a <code>state</code>, and at any specific given time, the system always have limited possible states, thus this kind of architecture is called <code>Finite State Machine</code>.
+			</p>
+
+			<p>
+				ERA-Engine (Godot) implemented this <code>FSM</code> pattern into the system, introducing <code>FSM Mode</code> as a brand-new coding mode for ERA game and other text-based games.
+			</p>
+
+			<p>
+				In ERA-Engine, any status can be regarded as a <code>state</code>, and the status transition can be regarded as a <code>transition</code>: layout of UI, gaming progress, etc. So in fact, the whole game process can be understanded as a procedure switching between different <code>states</code>.
+			</p>
+
+		</chapter>
+
+	</chapter>
+
+	<chapter id="Introduction.DesignIntro.Architecture">
+		<title>System Architecture</title>
+	</chapter>
+
+</topic>

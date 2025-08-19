@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Introducing ERA-Engine (Godot)" id="Introducing-ERA-Engine-Godot">
+
+    <p>
+	    General introduction about ERA-Engine.
+    </p>
+
+	<show-structure for="chapter"/>
+
+	<chapter>
+		<title>ERA-Engine Project</title>
+		<p>
+			ERA-Engine Project is an open-source project to construct modern text game engine initially for <a href="https://era.miraheze.org/wiki/%E9%A6%96%E9%A1%B5"><code>ERA Games</code></a>. We expect these engines can let developers, writers and non-professional gamers to develop ERA games easily, with modern language and feature supported.
+		</p>
+	</chapter>
+
+	<chapter>
+		<title>ERA-Engine (Godot)</title>
+		<p>
+			ERA-Engine (Godot) is the version that developed based on <a href="https://godotengine.org/"><code>Godot Engine</code></a>.
+		</p>
+
+		<chapter>
+			<title>Supported Languages</title>
+
+			<list>
+				<li>
+					<a href="https://dotnet.microsoft.com/en-us/languages/csharp">
+						<code>C#</code>
+					</a>
+				</li>
+				<li>
+					<a href="https://gdscript.com/">
+						<code>GD Script</code>
+					</a>
+				</li>
+			</list>
+
+		</chapter>
+
+	</chapter>
+</topic>

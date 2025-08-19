@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Features of ERA-Engine (Godot)" id="Features-of-ERA-Engine-Godot">
+
+    <p>
+	    Based on ERA-Engine's design, ERA-Engine (Godot) has the following features:
+    </p>
+
+	<chapter id="Introduction.DesignIntro.Features.Modes" collapsible="true">
+		<title>Modes</title>
+
+		<p>
+			ERA-Engine (Godot) has two coding modes: <code>ERA Mode</code> and <code>FSM Mode</code>.
+		</p>
+
+		<deflist collapsible="true">
+			<def title="ERA Mode" id="Introduction.DesignIntro.Architecture.Modes.ERAMode">
+				<p>
+					<code>ERA Mode</code> is the traditional coding mode of ERA-Engine (Godot). It is a text-based coding mode, which is similar to the coding mode of ERA games, including <a href="https://era.miraheze.org/wiki/%E8%B5%B7%E5%A7%8B"><code>Emuera</code></a> games and <a href="https://gitgud.io/umaera/engine/era-electron"><code>ERAElectron</code></a> games.
+				</p>
+			</def>
+			<def title="FSM Mode" id="Introduction.DesignIntro.Architecture.Modes.FSMMode"></def>
+		</deflist>
+
+	</chapter>
+</topic>

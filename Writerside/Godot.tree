@@ -7,4 +7,13 @@
                  start-page="starter-topic.md">
 
     <toc-element topic="starter-topic.md"/>
+	<toc-element topic="Introduction.topic">
+		<toc-element topic="Introducing-ERA-Engine-Godot.topic"/>
+		<toc-element topic="Design-of-ERA-Engine-Godot.topic"/>
+		<toc-element topic="Features-of-ERA-Engine-Godot.topic"/>
+	</toc-element>
+	<toc-element topic="Tutorial.topic"/>
+	<toc-element topic="Document.topic">
+		<toc-element topic="View.topic"/>
+	</toc-element>
 </instance-profile>
