@@ -19,7 +19,7 @@
 		<deflist collapsible="true">
 			<def title="ERA Mode" id="Introduction.DesignIntro.Architecture.Modes.ERAMode">
 				<p>
-					<code>ERA Mode</code> is the traditional coding mode of ERA-Engine (Godot). It is a text-based coding mode, which is similar to the coding mode of ERA games, including <a href="https://era.miraheze.org/wiki/%E8%B5%B7%E5%A7%8B"><code>Emuera</code></a> games and <a href="https://gitgud.io/umaera/engine/era-electron"><code>ERAElectron</code></a> games.
+					<code>ERA Mode</code> is the traditional coding mode of ERA-Engine (Godot). It is a text-based coding mode, which is similar to the coding mode of ERA games, including <a href="https://era.miraheze.org/wiki/发展历史"><code>Emuera</code></a> games and <a href="https://gitgud.io/umaera/engine/era-electron"><code>ERAElectron</code></a> games.
 				</p>
 			</def>
 			<def title="FSM Mode" id="Introduction.DesignIntro.Architecture.Modes.FSMMode"></def>

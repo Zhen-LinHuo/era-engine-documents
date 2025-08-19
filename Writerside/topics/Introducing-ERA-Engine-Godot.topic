@@ -13,13 +13,16 @@
 
 	<chapter>
 		<title>ERA-Engine Project</title>
+
 		<p>
-			ERA-Engine Project is an open-source project to construct modern text game engine initially for <a href="https://era.miraheze.org/wiki/%E9%A6%96%E9%A1%B5"><code>ERA Games</code></a>. We expect these engines can let developers, writers and non-professional gamers to develop ERA games easily, with modern language and feature supported.
+			ERA-Engine Project is an open-source project to construct modern text game engine initially for <a href="https://era.miraheze.org/wiki/起始"><code>ERA Games</code></a>. We expect these engines can let developers, writers and non-professional gamers to develop ERA games easily, with modern language and feature supported.
 		</p>
+
 	</chapter>
 
 	<chapter>
 		<title>ERA-Engine (Godot)</title>
+
 		<p>
 			ERA-Engine (Godot) is the version that developed based on <a href="https://godotengine.org/"><code>Godot Engine</code></a>.
 		</p>
