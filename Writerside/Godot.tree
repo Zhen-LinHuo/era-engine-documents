@@ -4,16 +4,21 @@
 
 <instance-profile id="Godot"
                  name="ERA-Engine-Godot-Document"
-                 start-page="starter-topic.md">
+                 start-page="Introduction.topic">
 
-    <toc-element topic="starter-topic.md"/>
 	<toc-element topic="Introduction.topic">
 		<toc-element topic="Introducing-ERA-Engine-Godot.topic"/>
 		<toc-element topic="Design-of-ERA-Engine-Godot.topic"/>
 		<toc-element topic="Features-of-ERA-Engine-Godot.topic"/>
 	</toc-element>
 	<toc-element topic="Tutorial.topic"/>
+	<toc-element topic="Advance-Introduction.topic">
+		<toc-element topic="Advance-Information-on-ERA-Engine-Godot.topic"/>
+		<toc-element topic="Feature-Details.topic"/>
+	</toc-element>
+	<toc-element topic="Advance-Tutorial.topic"/>
 	<toc-element topic="Document.topic">
 		<toc-element topic="View.topic"/>
 	</toc-element>
+	<toc-element topic="starter-topic.md"/>
 </instance-profile>

@@ -6,17 +6,18 @@ You can use it as a sandbox to play with Writerside features, and remove it from
 ## Add new topics
 You can create empty topics, or choose a template for different types of content that contains some boilerplate structure to help you get started:
 
-![Create new topic options](new_topic_options.png){ width=290 }{border-effect=line}
+![Create new topic options](new_topic_options.png){ width=450 }{border-effect=line}
 
 ## Write content
-%product% supports two types of markup: Markdown and XML.
+%product% supports two types of markup: `Markdown` and `XML`. More information about formatting page in `WriterSide` can reference on this [`Official Document`](https://www.jetbrains.com/help/writerside/markup-reference.html).
+
 When you create a new help article, you can choose between two topic types, but this doesn't mean you have to stick to a single format.
 You can author content in Markdown and extend it with semantic attributes or inject entire XML elements.
 
 ## Inject XML
 For example, this is how you inject a procedure:
 
-<procedure title="Inject a procedure" id="inject-a-procedure">
+<procedure title="Inject a Procedure" id="inject-a-procedure">
     <step>
         <p>Start typing and select a procedure type from the completion suggestions:</p>
         <img src="completion_procedure.png" alt="completion suggestions for procedure" border-effect="line"/>
@@ -33,9 +34,9 @@ To add switchable content, you can make use of tabs (inject them by starting to 
 
 <tabs>
     <tab title="Markdown">
-        <code-block lang="plain text">![Alt Text](new_topic_options.png){ width=450 }</code-block>
+        <code-block lang="text">![Alt Text](new_topic_options.png){ width=450 }</code-block>
     </tab>
-    <tab title="Semantic markup">
+    <tab title="XML">
         <code-block lang="xml">
             <![CDATA[<img src="new_topic_options.png" alt="Alt text" width="450px"/>]]></code-block>
     </tab>
@@ -43,24 +44,24 @@ To add switchable content, you can make use of tabs (inject them by starting to 
 
 ### Collapsible blocks
 Apart from injecting entire XML elements, you can use attributes to configure the behavior of certain elements.
+
 For example, you can collapse a chapter that contains non-essential information:
 
 #### Supplementary info {collapsible="true"}
-Content under a collapsible header will be collapsed by default,
-but you can modify the behavior by adding the following attribute:
-`default-state="expanded"`
+Content under a collapsible header will be collapsed by default, but you can modify the behavior by adding the following attribute: `default-state="expanded"`
 
 ### Convert selection to XML
 If you need to extend an element with more functions, you can convert selected content from Markdown to semantic markup.
 For example, if you want to merge cells in a table, it's much easier to convert it to XML than do this in Markdown.
 Position the caret anywhere in the table and press <shortcut>Alt+Enter</shortcut>:
 
-<img src="convert_table_to_xml.png" alt="Convert table to XML" width="706" border-effect="line"/>
+<img src="convert_table_to_xml.png" alt="Convert table to XML" width="800" border-effect="line"/>
 
 ## Feedback and support
-Please report any issues, usability improvements, or feature requests to our
-<a href="https://youtrack.jetbrains.com/newIssue?project=WRS">YouTrack project</a>
-(you will need to register).
+
+### WriterSide Things
+
+Please report any issues, usability improvements, or feature requests to our <a href="https://youtrack.jetbrains.com/newIssue?project=WRS">YouTrack project</a> (you will need to register).
 
 You are welcome to join our
 <a href="https://jb.gg/WRS_Slack">public Slack workspace</a>.
@@ -76,4 +77,16 @@ You can also always email us at [writerside@jetbrains.com](mailto:writerside@jet
         <a href="https://www.jetbrains.com/help/writerside/local-build.html">Build and publish</a>
         <a href="https://www.jetbrains.com/help/writerside/configure-search.html">Configure Search</a>
     </category>
+</seealso>
+
+### ERA-Engine (Godot) Document Things
+
+Any issues can be reported on our [`GitHub Issues`](https://github.com/Zhen-LinHuo/era-engine-documents/issues). 
+
+Please search issues to make sure there isn't any duplicated issue. If you find the issues you want to post already, just leave a comment under that issue.
+
+<seealso>
+    <category ref="era-engine-related">
+		<a href="https://github.com/Zhen-LinHuo/ERA-Engine-Godot">ERA-Engine GitHub Repository</a>
+	</category>
 </seealso>

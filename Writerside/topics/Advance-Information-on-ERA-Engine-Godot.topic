@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Advance Information on ERA-Engine (Godot)" id="Advance-Information-on-ERA-Engine-Godot">
+
+	<p>The detailed information on system architecture and design principle of ERA-Engine (Godot), for developers.</p>
+
+	<show-structure for="chapter" />
+
+	<chapter id="Introduction.DesignIntro.Design">
+		<title>Design Principle</title>
+
+		<chapter id="AIntroduction.DesignIntro.FSM" collapsible="true">
+			<title>Finite State Machine (FSM)</title>
+
+			<p>
+				more detailed info about <code>FSM</code>
+			</p>
+
+		</chapter>
+		<chapter id="AIntroduction.DesignIntro.DTO" collapsible="true">
+			<title>Data Transfer Object (DTO)</title>
+
+			<p>
+				more detailed info about <code>DTO</code>
+			</p>
+		</chapter>
+
+	</chapter>
+
+	<chapter id="Introduction.DesignIntro.Architecture">
+		<title>System Architecture</title>
+	</chapter>
+</topic>
