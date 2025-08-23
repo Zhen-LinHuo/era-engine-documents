@@ -1,0 +1,15 @@
+﻿/*.ttf
+  Access-Control-Allow-Origin: *
+  Cache-Control: max-age=31536000
+
+/*.otf
+  Access-Control-Allow-Origin: *
+  Cache-Control: max-age=31536000
+
+/*.woff
+  Access-Control-Allow-Origin: *
+  Cache-Control: max-age=31536000
+
+/*.woff2
+  Access-Control-Allow-Origin: *
+  Cache-Control: max-age=31536000

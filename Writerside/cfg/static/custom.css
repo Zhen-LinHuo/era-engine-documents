@@ -3,48 +3,50 @@
 
 @font-face {
 	font-family: 'Ubuntu';
-	src: url('customisation/fonts/Ubuntu/Ubuntu-Regular.ttf') format('opentype');
+	src: url('./customisation/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: block;
 }
 
 @font-face {
 	font-family: 'Johnston100';
-	src: url('customisation/fonts/Johnston100/johnston100.otf') format('opentype');
+	src: url('./customisation/fonts/Johnston100/johnston100.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: block;
 }
 
 @font-face {
 	font-family: 'Noto Sans SC';
-	src: url('customisation/fonts/Noto Sans/NotoSansSC-VariableFont_wght.ttf') format('opentype');
+	src: url('./customisation/fonts/Noto Sans/NotoSansSC-VariableFont_wght.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: block;
 }
 
 @font-face {
 	font-family: 'Noto Sans';
-	src: url('customisation/fonts/Noto Sans/NotoSans-VariableFont_wdth,wght.ttf') format('opentype');
+	src: url('./customisation/fonts/Noto Sans/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: block;
 }
 
 @font-face {
 	font-family: 'Maple Mono Normal NF CN';
-	src: url('customisation/fonts/Maple/MapleMonoNormal-NF-CN-Regular.ttf') format('opentype');
+	src: url('./customisation/fonts/Maple/MapleMonoNormal-NF-CN-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: block;
 }
 
 .title__content, h1, h2, h3, h4, h5, h6 {
-	/*font-family: 'Ubuntu', 'Noto Sans SC', sans-serif;*/
-	font-family: "Johnston100", "Ubuntu", "Noto Sans SC", sans-serif;
+	font-family: "Johnston100", "Ubuntu", "Noto Sans SC", -apple-system, BlinkMacSystemFont, sans-serif;
 }
-
 .article__p, p, body {
-	font-family: "Noto Sans", "Noto Sans SC", sans-serif;
+	font-family: "Noto Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, sans-serif;
 }
-
 pre, code, .code-block {
-	font-family: "Maple Mono Normal NF CN", monospace;
+	font-family: "Maple Mono Normal NF CN", ui-monospace, SFMono-Regular, monospace;
 }
