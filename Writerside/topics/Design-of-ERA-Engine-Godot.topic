@@ -33,10 +33,46 @@
 
 		</chapter>
 
+		<chapter id="Introduction.DesignIntro.MVC" collapsible="true">
+			<title>MVC Pattern</title>
+
+			<p>
+				<code>Model-View-Controller</code> (<code>MVC</code>) is a typical design pattern on programming. The programme can be regarded as 3 parts: <code>Model</code>, <code>View</code> and <code>Controller</code>.
+			</p>
+
+			<img src="MVC.png" alt="Structure and Logic of MVC Pattern" width="300"/>
+
+			<p>
+				Generally, <code>view</code> is what users will see, <code>model</code> represents database, and <code>controller</code> is the code logic of the programme. Anytime when status on <code>view</code> updates, controller will handle the main logic, and ask to look up data in <code>model</code>, master on computation and finally update any detail to <code>view</code>. Thus, the programme is divided into 3 isolated parts, making the programme more mordulised and robust.
+			</p>
+
+		</chapter>
+
 	</chapter>
 
 	<chapter id="Introduction.DesignIntro.Architecture">
 		<title>System Architecture</title>
+
+		<chapter id="Introduction.DesignIntro.Architecture.Overview" collapsible="false">
+			<title>Overview</title>
+
+			<p>
+				In general, to create a game with ERA-Engine, there are 2 main parts you need to concentrate on:
+			</p>
+
+			<list>
+				<li><code>State</code>: Your arrangement and content of interface</li>
+				<li><code>Data</code>: All data files, including <code>character</code>, <code>kojo</code>, <code>item</code>, etc.</li>
+			</list>
+
+			<p>
+				Then, based on these two parts, you can customise the logic behind each <code>UI unit</code> in a state under the <code>FSM</code> pattern, thus construct the whole logic of your game.
+			</p>
+
+			<tip>Want a quick start? Visit the <a href="Setting-States.topic">start-up tutorial</a>.</tip>
+
+		</chapter>
+
 	</chapter>
 
 </topic>

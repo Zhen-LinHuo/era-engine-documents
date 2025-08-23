@@ -12,6 +12,26 @@
 	<chapter title="Contents" id="Tutorial.Contents">
 
 		<list>
+			<li>
+				FSM Mode: Modern Design Pattern Based on <code>Finite State Machine</code>
+
+				<list>
+
+					<li>
+						<a href="Setting-States.topic" />: States and game transit logic
+					</li>
+					<li>
+						<a href="Data-Files.topic" />: Pre-define your data
+					</li>
+					<li>
+						<a href="Product-Settings.topic" />: Icon, Title, etc.
+					</li>
+
+				</list>
+			</li>
+			<li>
+				ERA Mode: Traditional Emuera Style
+			</li>
 		</list>
 
 	</chapter>

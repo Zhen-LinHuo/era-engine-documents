@@ -12,7 +12,7 @@ permissions:
 
 env:
     INSTANCE: "Writerside/Godot"
-    # DOCKER_VERSION: 'XXX.YYYYY' # Comment to let GitHub Action decide
+    DOCKER_VERSION: '2025.04.8412'  # 明确指定版本
     # IS_GROUP: 'true'  # Uncomment to build a group
 
 jobs:
@@ -34,12 +34,12 @@ jobs:
                   INSTANCE_ID_UPPER=$(echo "$INSTANCE" | tr '[:lower:]' '[:upper:]')
                   ARTIFACT="webHelp${INSTANCE_ID_UPPER}2-all.zip"
                   ALGOLIA_ARTIFACT="algolia-indexes-${INSTANCE_ID_UPPER}.zip"
-    
+                  
                   # Print the values
                   echo "INSTANCE_ID_UPPER: $INSTANCE_ID_UPPER"
                   echo "ARTIFACT: $ARTIFACT"
                   echo "ALGOLIA_ARTIFACT: $ALGOLIA_ARTIFACT"
-    
+                  
                   # Set the environment variables and outputs
                   echo "INSTANCE_ID_UPPER=$INSTANCE_ID_UPPER" >> $GITHUB_ENV
                   echo "ARTIFACT=$ARTIFACT" >> $GITHUB_ENV
@@ -51,15 +51,14 @@ jobs:
               uses: JetBrains/writerside-github-action@v4
               with:
                   instance: ${{ env.INSTANCE }}
-                  # docker-version: ${{ env.DOCKER_VERSION }}
+                  docker-version: ${{ env.DOCKER_VERSION }}
 
-            -   name: Copy fonts and headers to output directory
-                run: |
-                    mkdir -p dir/customisation/fonts
-                    cp -r ./Writerside/cfg/static/customisation/fonts/* dir/customisation/fonts/
-                    cp ./Writerside/cfg/static/custom.css dir/
-                    cp ./Writerside/cfg/static/_headers dir/
-            
+            - name: Copy fonts and headers to output directory
+              run: |
+                  mkdir -p dir/customisation/fonts
+                  cp -r ./Writerside/cfg/static/customisation/fonts/* dir/customisation/fonts/
+                  cp ./Writerside/cfg/static/custom.css dir/
+                  cp ./Writerside/cfg/static/_headers dir/
 
             - name: Save artifact with build results
               uses: actions/upload-artifact@v4

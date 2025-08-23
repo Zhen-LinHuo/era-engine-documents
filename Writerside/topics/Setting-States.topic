@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Setting States" id="Setting-States">
+
+    <chapter id="Tutorial.Sates.Overview">
+	    <title>Overview</title>
+
+	    <p>
+		    In the <code>FSM Mode</code>, the game in general is transiting among <code>states</code>, so the main part of the game is the state scripts.
+	    </p>
+    </chapter>
+
+	<show-structure for="chapter" />
+
+	<chapter id="Tutorial.Sates.FirstState">
+		<title>Create Your First State</title>
+
+		<p>
+			State scripts are in general the same. Here, let's take the first state -- <code>main state</code> as an example.
+		</p>
+
+		<procedure>
+			<step>
+				<procedure collapsible="true">
+					<title>Create and Edit the <code>main_state.gd</code></title>
+					<step>Find the <code>./GdsScript</code> folder, where all your game scripts will be saved here if
+						you code your game in <code>GD Script</code>.
+					</step>
+					<step>Here, you will find 2 folders: <code>Data</code> and <code>Flow</code>. The former one is used
+						to save all data files, while the latter is the one to save your game scripts.
+					</step>
+					<step>
+						Create a file called <code>main_state.gd</code> under path <code>./GdsScript/Flow</code>. This
+						is the default name of the initial state.
+						<tip>Usually, it is good to make your file name the same as the name as the class/state of your
+							file.
+						</tip>
+					</step>
+					<step>
+						Now, finish the basic structure of your file as below:
+
+						<code-block lang="gdscript">
+class_name MainState
+extends Flow
+# Declare the file is coding a state by 'extends Flow'
+# Declare the state name by 'class_name MainState'
+</code-block>
+					</step>
+				</procedure>
+			</step>
+			<step>
+				<procedure collapsible="false">
+					<title>Write the State</title>
+					<step>
+						Create a <code>main_state</code> function as the enterpoint of this state:
+
+						<code-block lang="gdscript">
+func main_state():
+	TXT("era靛紫档案")  # Create a text unit
+	BOX([   # Create a series of units, pack in a box
+	BTN("开始游戏", "start_game"),  # Create a button unit, and set corresponding next state name
+	BTN("读取存档", "load_game")
+	])
+</code-block>
+					</step>
+				</procedure>
+			</step>
+			<step>
+				<procedure>
+					<title>Next State Functions</title>
+					<step>
+						Setting next state functions with following codes:
+
+						<code-block lang="gdscript">
+func start_game():
+	TXT("你喜欢什么样的主角？")
+	BTN("喜爱淑女的主角", "select_char_0")
+	BTN("财大气粗的主角", "select_char_1")
+	BTN("神父气质的主角", "select_char_2")
+	BTN("流氓热血的主角", "select_char_3")
+
+func load_game():
+	TXT("读取存档")
+	BTN("读取不了，返回", "main_state")
+
+	# Continue with select_char_0, select_char_1, select_char_2, select_char_3...
+</code-block>
+					</step>
+					<step>Follwing such work flow, you can build your first minimal game.</step>
+				</procedure>
+			</step>
+		</procedure>
+
+	</chapter>
+</topic>
