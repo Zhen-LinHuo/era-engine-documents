@@ -22,7 +22,10 @@
 	</toc-element>
 	<toc-element topic="Advance-Tutorial.topic"/>
 	<toc-element topic="Document.topic">
-		<toc-element topic="View.topic"/>
+		<toc-element toc-title="API">
+			<toc-element topic="API-UI.topic"/>
+		</toc-element>
 	</toc-element>
+	<toc-element toc-title="Engine Document"/>
 	<toc-element topic="starter-topic.md"/>
 </instance-profile>

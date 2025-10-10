@@ -61,8 +61,8 @@
 			</p>
 
 			<list>
-				<li><code>State</code>: Your arrangement and content of interface</li>
-				<li><code>Data</code>: All data files, including <code>character</code>, <code>kojo</code>, <code>item</code>, etc.</li>
+				<li id="Introduction.DesignIntro.Architecture.Overview.State"><code>State</code>: Your arrangement and content of interface</li>
+				<li id="Introduction.DesignIntro.Architecture.Overview.Data"><code>Data</code>: All data files, including <code>character</code>, <code>kojo</code>, <code>item</code>, etc.</li>
 			</list>
 
 			<p>

@@ -43,11 +43,15 @@
 						Now, finish the basic structure of your file as below:
 
 						<code-block lang="gdscript">
-class_name MainState
-extends Flow
-# Declare the file is coding a state by 'extends Flow'
-# Declare the state name by 'class_name MainState'
-</code-block>
+							class_name MainState
+							extends Flow
+							# Declare the file is coding a state by 'extends Flow'
+							# Declare the state name by 'class_name MainState'
+						</code-block>
+
+						<p>
+							Here we use <code>class_name</code> do decalre a specific <a href="Design-of-ERA-Engine-Godot.topic" anchor="Introduction.DesignIntro.Architecture.Overview.State"><code>state</code></a>, and use <code>extends Flow</code> to tell the engine that this class (state) it is based on the template <code>Flow</code> provided by ERA-Engine, which means in fact it is a state in our <a href="Design-of-ERA-Engine-Godot.topic" anchor="Introduction.DesignIntro.FSM"><code>FSM pattern</code></a>
+						</p>
 					</step>
 				</procedure>
 			</step>
@@ -58,13 +62,21 @@ extends Flow
 						Create a <code>main_state</code> function as the enterpoint of this state:
 
 						<code-block lang="gdscript">
-func main_state():
-	TXT("era靛紫档案")  # Create a text unit
-	BOX([   # Create a series of units, pack in a box
-	BTN("开始游戏", "start_game"),  # Create a button unit, and set corresponding next state name
-	BTN("读取存档", "load_game")
-	])
-</code-block>
+							func main_state():
+								TXT("era靛紫档案")  # Create a text unit
+								BOX([   # Create a series of units, pack in a box
+									BTN("开始游戏", "start_game"),  # Create a button unit, and set corresponding next state name
+									BTN("读取存档", "load_game")
+									])
+						</code-block>
+
+						<p>
+							You can use <code>BOX</code> to warp UI components and adjust their arrangement. For functions like <code>TXT</code> <code>BTN</code> to construct UI, refernce our <a href="Document.topic">document</a> to see all of them.
+						</p>
+
+						<p>
+							You can see <code>BTN</code> not only create a button with given text inside, but also declare a new <a href="Design-of-ERA-Engine-Godot.topic" anchor="Introduction.DesignIntro.Architecture.Overview.State"><code>state</code></a> the game should go to when this button is clicked.
+						</p>
 					</step>
 				</procedure>
 			</step>
@@ -75,19 +87,27 @@ func main_state():
 						Setting next state functions with following codes:
 
 						<code-block lang="gdscript">
-func start_game():
-	TXT("你喜欢什么样的主角？")
-	BTN("喜爱淑女的主角", "select_char_0")
-	BTN("财大气粗的主角", "select_char_1")
-	BTN("神父气质的主角", "select_char_2")
-	BTN("流氓热血的主角", "select_char_3")
+							func start_game():
+								TXT("你喜欢什么样的主角？")
+								BTN("喜爱淑女的主角", "select_char_0")
+								BTN("财大气粗的主角", "select_char_1")
+								BTN("神父气质的主角", "select_char_2")
+								BTN("流氓热血的主角", "select_char_3")
 
-func load_game():
-	TXT("读取存档")
-	BTN("读取不了，返回", "main_state")
+							func load_game():
+								TXT("读取存档")
+								BTN("读取不了，返回", "main_state")
 
-	# Continue with select_char_0, select_char_1, select_char_2, select_char_3...
-</code-block>
+								# Continue with select_char_0, select_char_1, select_char_2, select_char_3...
+						</code-block>
+
+						<p>
+							Now, the button of your state <code>MainState</code> can work normally.
+						</p>
+
+						<p>
+							To continue developing this game example, you can keep on coding states for buttons in state <code>start_game</code>.
+						</p>
 					</step>
 					<step>Follwing such work flow, you can build your first minimal game.</step>
 				</procedure>

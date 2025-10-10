@@ -22,7 +22,11 @@
 					<code>ERA Mode</code> is the traditional coding mode of ERA-Engine (Godot). It is a text-based coding mode, which is similar to the coding mode of ERA games, including <a href="https://era.miraheze.org/wiki/发展历史"><code>Emuera</code></a> games and <a href="https://gitgud.io/umaera/engine/era-electron"><code>ERAElectron</code></a> games.
 				</p>
 			</def>
-			<def title="FSM Mode" id="Introduction.DesignIntro.Architecture.Modes.FSMMode"></def>
+			<def title="FSM Mode" id="Introduction.DesignIntro.Architecture.Modes.FSMMode">
+				<p>
+					<code>FSM Mode</code> is the typical coding mode of ERA-Engine (Godot). Following the <a href="Design-of-ERA-Engine-Godot.topic" anchor="Introduction.DesignIntro.FSM">FSM pattern</a>, you can use full power of this engine in a modern way.
+				</p>
+			</def>
 		</deflist>
 
 	</chapter>

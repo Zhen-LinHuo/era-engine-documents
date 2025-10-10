@@ -6,7 +6,22 @@
        title="Document" id="Document">
 
 	<p>
-		Document and references
+		This part is for game developer and others who want to customise the game. You can look up for APIs and definitions of ERA-Engine (Godot).
 	</p>
 
+	<chapter title="Quick Lookup" id="Document.Lookup">
+		<p>
+			Here is a quick lookup table:
+		</p>
+
+		<deflist collapsible="true" id="Document.Lookup.LookupTable">
+			<def title="API" default-state="expanded">
+				<list>
+					<li><a href="API-UI.topic"><code>View</code></a>: For creating and arranging UI</li>
+				</list>
+			</def>
+			<def title="Engine Document" default-state="collapsed">
+			</def>
+		</deflist>
+	</chapter>
 </topic>

@@ -9,7 +9,48 @@
 		<title>Overview</title>
 
 		<p>
-			Another important part of <code>FSM Mode</code> coding is the data file.
+			Another important part of <code>FSM Mode</code> coding is the data file. Kojo, charachter data, item and equipment data, etc. are all saved as data file in game system.
 		</p>
+
+		<p>
+			Currently, ERA-Engine supports following data file format:
+		</p>
+
+		<deflist collapsible="true">
+			<def title="Supported Format">
+				<deflist collapsible="true">
+					<def title="CSV">
+						<p>
+							CSV (Comma-Seperated Values) is a text data format that uses commas to separate delimiter-separated values, and newlines to separate records. CSV data stores tabular data (numbers and text) in plain text, where each line typically represents one data record.
+						</p>
+
+						<p>
+							CSV formats are best used to represent sets or sequences of records in which each record has an identical list of fields. This corresponds to a single relation in a relational database, or to data (though not calculations) in a typical spreadsheet.
+						</p>
+
+						<p>
+							CSV format is the most simple format to save data, and is also the way Emuera games save their data
+						</p>
+					</def>
+				</deflist>
+			</def>
+			<def title="Format Planning to Support">
+				<deflist collapsible="true">
+					<def title="XML">
+						<p>
+							XML (Extensible Markup Language) is a markup language and file format for storing, transmitting, and reconstructing data. It defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.
+						</p>
+
+						<p>
+							XML has come into common use for the interchange of data over the Internet. Hundreds of document formats using XML syntax have been developed, including RSS, Atom, Office Open XML, OpenDocument, SVG, COLLADA, and XHTML.
+						</p>
+
+						<p>
+							Comparing with CSV, XML can provide more readable and structural way to organise your data.
+						</p>
+					</def>
+				</deflist>
+			</def>
+		</deflist>
 	</chapter>
 </topic>
