@@ -14,7 +14,6 @@
 
 		<chapter id="Introduction.DesignIntro.FSM" collapsible="true">
 			<title>Finite State Machine (FSM)</title>
-
 			<p>
 				<code>Finite State Machine</code> (<code>FSM</code>) is a system that has a finite number of states. It is a model of computation used to design both computer programs and sequential logic circuits.
 			</p>
@@ -23,6 +22,8 @@
 				All data, status and other information of the programme can be regarded as a <code>state</code>, and at any specific given time, the system always have limited possible states, thus this kind of architecture is called <code>Finite State Machine</code>.
 			</p>
 
+			<img src="FSM.svg" alt="Finite State Machine"/>
+
 			<p>
 				ERA-Engine (Godot) implemented this <code>FSM</code> pattern into the system, introducing <code>FSM Mode</code> as a brand-new coding mode for ERA game and other text-based games.
 			</p>
@@ -30,7 +31,6 @@
 			<p>
 				In ERA-Engine, any status can be regarded as a <code>state</code>, and the status transition can be regarded as a <code>transition</code>: layout of UI, gaming progress, etc. So in fact, the whole game process can be understanded as a procedure switching between different <code>states</code>.
 			</p>
-
 		</chapter>
 
 		<chapter id="Introduction.DesignIntro.MVC" collapsible="true">
@@ -40,12 +40,11 @@
 				<code>Model-View-Controller</code> (<code>MVC</code>) is a typical design pattern on programming. The programme can be regarded as 3 parts: <code>Model</code>, <code>View</code> and <code>Controller</code>.
 			</p>
 
-			<img src="MVC.png" alt="Structure and Logic of MVC Pattern" width="300"/>
+			<img src="MVC.svg" alt="Structure and Logic of MVC Pattern"/>
 
 			<p>
 				Generally, <code>view</code> is what users will see, <code>model</code> represents database, and <code>controller</code> is the code logic of the programme. Anytime when status on <code>view</code> updates, controller will handle the main logic, and ask to look up data in <code>model</code>, master on computation and finally update any detail to <code>view</code>. Thus, the programme is divided into 3 isolated parts, making the programme more mordulised and robust.
 			</p>
-
 		</chapter>
 
 	</chapter>
@@ -70,7 +69,6 @@
 			</p>
 
 			<tip>Want a quick start? Visit the <a href="Setting-States.topic">start-up tutorial</a>.</tip>
-
 		</chapter>
 
 	</chapter>

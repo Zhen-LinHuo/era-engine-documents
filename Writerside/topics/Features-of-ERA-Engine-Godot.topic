@@ -9,7 +9,7 @@
 	    Based on ERA-Engine's design, ERA-Engine (Godot) has the following features:
     </p>
 
-	<chapter id="Introduction.DesignIntro.Features.Modes" collapsible="true">
+	<chapter id="Introduction.DesignIntro.Features.Modes">
 		<title>Modes</title>
 
 		<p>

@@ -14,48 +14,48 @@
                     Suite is the biggest level of UI collection. UI Arrangement of each window (subwindow) can be regarded as a suite.
             </chapter>
 
-            <chapter collapsible="true" id="Document.API.UI.Tab">
-                <title>Tab <code>TAB</code></title>
-                <chapter title="Description">
-                    <p>
-                        <code>TAB</code> is used to...
-                    </p>
-                </chapter>
-                <chapter title="Definition">
-                    <tabs group="language">
-                        <tab title="GD Script">
-                            <code-block lang="GDScript">
-                                # Need Definition
-                            </code-block>
+<!--            <chapter collapsible="true" id="Document.API.UI.Tab">-->
+<!--                <title>Tab <code>TAB</code></title>-->
+<!--                <chapter title="Description">-->
+<!--                    <p>-->
+<!--                        <code>TAB</code> is used to...-->
+<!--                    </p>-->
+<!--                </chapter>-->
+<!--                <chapter title="Definition">-->
+<!--                    <tabs group="language">-->
+<!--                        <tab title="GD Script">-->
+<!--                            <code-block lang="GDScript">-->
+<!--                                # Need Definition-->
+<!--                            </code-block>-->
 
-                            Create a button with the given text in it, link a state that should go to when this button is pressed, then return the instance of this button for further reference.
+<!--                            Create a button with the given text in it, link a state that should go to when this button is pressed, then return the instance of this button for further reference.-->
 
-                            <chapter title="Parameters">
-<!--                                <deflist collapsible="true">-->
-<!--                                    <def>-->
-<!--                                        <title><code>String</code> text</title>-->
-<!--                                        The text need to be showed on the button.-->
-<!--                                    </def>-->
-<!--                                    <def>-->
-<!--                                        <title><code>String</code> state</title>-->
-<!--                                        The name of next state the game should go to when this button is pressed.-->
-<!--                                    </def>-->
-<!--                                </deflist>-->
-                            </chapter>
+<!--                            <chapter title="Parameters">-->
+<!--&lt;!&ndash;                                <deflist collapsible="true">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <def>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <title><code>String</code> text</title>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        The text need to be showed on the button.&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </def>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <def>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <title><code>String</code> state</title>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        The name of next state the game should go to when this button is pressed.&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </def>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </deflist>&ndash;&gt;-->
+<!--                            </chapter>-->
 
-                            <chapter title="Return">
-<!--                                <code>Node</code>: Instance of this button unit.-->
-                            </chapter>
+<!--                            <chapter title="Return">-->
+<!--&lt;!&ndash;                                <code>Node</code>: Instance of this button unit.&ndash;&gt;-->
+<!--                            </chapter>-->
 
-                            <chapter title="Example">
-                                <code-block lang="GDScript">
-                                    # Need Example
-                                </code-block>
-                            </chapter>
-                        </tab>
-                    </tabs>
-                </chapter>
-            </chapter>
+<!--                            <chapter title="Example">-->
+<!--                                <code-block lang="GDScript">-->
+<!--                                    # Need Example-->
+<!--                                </code-block>-->
+<!--                            </chapter>-->
+<!--                        </tab>-->
+<!--                    </tabs>-->
+<!--                </chapter>-->
+<!--            </chapter>-->
         </chapter>
 
         <chapter title="UI Unit Group">
