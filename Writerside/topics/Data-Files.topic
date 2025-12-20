@@ -36,6 +36,21 @@
 			</def>
 			<def title="Format Planning to Support">
 				<deflist collapsible="true">
+					<def title="INI">
+						<p>
+							An INI file is a configuration file for computer software that consists of plain text with a structure and syntax comprising key–value pairs organised in sections.
+						</p>
+
+						<p>
+							INI is human-readable and simple to parse, so it is a usable format for configuration files that do not require much greater complexity.
+						</p>
+
+						<p>
+							INI-style file is orginally supported by Godot Engine, thus we will soon support such approach to manage data file.
+						</p>
+					</def>
+				</deflist>
+				<deflist collapsible="true">
 					<def title="XML">
 						<p>
 							XML (Extensible Markup Language) is a markup language and file format for storing, transmitting, and reconstructing data. It defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.
