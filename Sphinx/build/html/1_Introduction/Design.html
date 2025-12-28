@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ERA Engine (Godot) 的设计 &#8212; Document of ERA Engine 0.1 文档</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=7c91f8fd"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=540d3cec"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="ERA Engine (Godot) 的功能特性" href="Feature.html" />
+    <link rel="prev" title="简介" href="Introduction.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="era-engine-godot">
+<h1>ERA Engine (Godot) 的设计<a class="headerlink" href="#era-engine-godot" title="链接到此标题。">¶</a></h1>
+<p>这一章对 ERA Engine (Godot) 的设计进行概述，包其架构和设计纲领。</p>
+<section id="id1">
+<h2>设计模式<a class="headerlink" href="#id1" title="链接到此标题。">¶</a></h2>
+<details class="admonition-fsm admonition" id="introduction-designintro-fsm" open="open">
+<summary class="admonition-title">有限状态机 (FSM)</summary>
+<p>有限状态机 ( <code class="docutils literal notranslate"><span class="pre">FSM`</span></code> ) 是一种包含有限种状态的系统模型，为计算机程序和顺序逻辑回路设计。程序所有的数据、状态和其他信息都被视为 <code class="docutils literal notranslate"><span class="pre">状态</span></code> ，在任一时间，系统只会存在有限种状态。</p>
+<img alt="../_images/FSM.svg" class="align-center" src="../_images/FSM.svg" />
+<p>ERA Engine (Godot) 内置了这种 <code class="docutils literal notranslate"><span class="pre">FSM</span></code> 模式，也可称之为 <code class="docutils literal notranslate"><span class="pre">FSM</span> <span class="pre">模式</span></code>，作为 ERA 游戏和其他基于文字的游戏的全新编程模式。</p>
+<p>在 ERA Engine 中，任何状态都可以被视为有限状态机中的 <code class="docutils literal notranslate"><span class="pre">状态</span></code> ，因而任何状态的变化（e.g. UI 的改变，游戏进度的推进，点击了某个按钮，etc.）都可以被视为状态的 <code class="docutils literal notranslate"><span class="pre">转置</span></code> 。因此，实际上整个游戏就可以理解为在不同 <code class="docutils literal notranslate"><span class="pre">状态</span></code> 之间进行 <code class="docutils literal notranslate"><span class="pre">转置</span></code> 的过程。</p>
+</details>
+<details class="admonition-mvc admonition" id="introduction-designintro-mvc" open="open">
+<summary class="admonition-title">MVC 模式</summary>
+<p>MVC 模式是一种设计模式，用于将应用程序分为三个部分：模型 (Model)，视图 (View) 和控制器 (Controller)。</p>
+<figure class="align-center" id="id4">
+<img alt="../_images/MVC.svg" src="../_images/MVC.svg" />
+<figcaption>
+<p><span class="caption-text">MVC 模式的结构和逻辑</span><a class="headerlink" href="#id4" title="链接到此图片">¶</a></p>
+</figcaption>
+</figure>
+<p>一般而言， <code class="docutils literal notranslate"><span class="pre">View</span></code> 是用户能看到的界面， <code class="docutils literal notranslate"><span class="pre">Model</span></code> 是数据库和数据模型，而 <code class="docutils literal notranslate"><span class="pre">Controller</span></code> 则是程序的运作逻辑。在 <code class="docutils literal notranslate"><span class="pre">View</span></code> 的状态更新时， <code class="docutils literal notranslate"><span class="pre">Controller</span></code> 就会管控运行逻辑，查询 <code class="docutils literal notranslate"><span class="pre">Model</span></code> 中的数据，进行计算和处理，最终将更新信息返回给 <code class="docutils literal notranslate"><span class="pre">View</span></code> 。使用这样的设计模式有助于令程序结构清晰、运行可靠。</p>
+</details>
+</section>
+<section id="id2">
+<h2>设计架构<a class="headerlink" href="#id2" title="链接到此标题。">¶</a></h2>
+<section id="id3">
+<h3>系统架构<a class="headerlink" href="#id3" title="链接到此标题。">¶</a></h3>
+<p>总体来看，要在 ERA Engine 中实现一个游戏，你主要需要关注这两个部分：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">状态</span></code>：你对界面及其内容的布置</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">数据</span></code>：所有的数据文件，包括 <code class="docutils literal notranslate"><span class="pre">角色</span></code> ， <code class="docutils literal notranslate"><span class="pre">口上</span></code> ， <code class="docutils literal notranslate"><span class="pre">物品</span></code> 等。</p></li>
+</ul>
+<p>基于这两部分和 :ref: <cite>Introduction.DesignIntro.FSM</cite> ，你可以自定义你的每一个 <code class="docutils literal notranslate"><span class="pre">UI</span> <span class="pre">单元</span></code> 背后的逻辑，最终完成整个游戏的运作逻辑。</p>
+<div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>想要快速开始制作你的游戏？查看 :ref: <cite>Tutorial</cite> 章节！</p>
+</div>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Document of ERA Engine</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="提交" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>导航</h3>
+<p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Introduction.html">简介</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Introduction.html#era-engine">ERA Engine 项目</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="Introduction.html#era-engine-godot">ERA Engine (Godot)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="Introduction.html">简介</a><ul>
+      <li>Previous: <a href="Introduction.html" title="上一章">简介</a></li>
+      <li>Next: <a href="Feature.html" title="下一章">ERA Engine (Godot) 的功能特性</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Astra-Lab.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/1_Introduction/Design.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
