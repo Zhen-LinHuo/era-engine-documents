@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>数据文件 | ERA-Engine Document </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="数据文件 | ERA-Engine Document ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Zhen-LinHuo/ERA-Engine-Documents/blob/Develop/Docs/2_Tutorial/2.2_DataFiles.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="ERA-Engine Document">
+            ERA-Engine Document
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="数据文件">数据文件</h1>
+
+<p>在 <code>FSM 模式</code> 下编写游戏的另一个重要部分是数据文件。无论是口上、角色数据、物品和装备数据，亦或是其他更多类型的信息，都需要存储为数据文件以供程序查询。</p>
+<p>目前，ERA-Engine支持以下数据文件格式：</p>
+<h2 id="已经支持的格式">已经支持的格式</h2>
+<h3 id="csv">CSV</h3>
+<p>CSV（逗号分隔值）是一种文本数据格式，它使用逗号分隔不同的值，并使用换行符分隔记录。CSV 数据以纯文本形式存储表格数据（数字和文本），其中每一行通常代表一条数据记录。</p>
+<p>CSV 格式最适合表示记录集或记录序列，其中每条记录都具有相同的字段列表。这对应于关系数据库中的单个关系，或者对应于典型电子表格中的数据（但不包括计算结果）。</p>
+<p>CSV 格式是保存数据最简单的格式，也是 Emuera 游戏保存数据的方式。</p>
+<h2 id="计划支持的格式">计划支持的格式</h2>
+<h3 id="ini">INI</h3>
+<p>INI 文件是一种计算机软件的配置文件，它由纯文本构成，结构和语法以键值对的形式组织成不同的部分。</p>
+<p>INI 文件易于阅读和解析，因此适用于不太复杂的配置文件。</p>
+<p>Godot 原生支持 INI 格式的文件，因此我们很快也将支持这种数据文件管理方式。</p>
+<h3 id="xml">XML</h3>
+<p>XML（Extensible Markup Language, 可扩展标记语言）是一种用于存储、传输和重构数据的标记语言和文件格式。它定义了一套规则，用于以既人可读又机器可读的格式对文档进行编码。</p>
+<p>XML 已广泛应用于互联网数据交换。数百种使用 XML 语法的文档格式已被开发出来，包括 RSS、Atom、Office Open XML、OpenDocument、SVG、COLLADA 和 XHTML。</p>
+<p>与 CSV 相比，XML 可以提供更易读、结构化的数据组织方式。</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Zhen-LinHuo/ERA-Engine-Documents/blob/Develop/Docs/2_Tutorial/2.2_DataFiles.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

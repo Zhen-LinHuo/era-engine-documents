@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: ERAGodot.Prototype.CspScript.Constants
+  commentId: N:ERAGodot.Prototype.CspScript.Constants
+  id: ERAGodot.Prototype.CspScript.Constants
+  children:
+  - ERAGodot.Prototype.CspScript.Constants.FileExtensions
+  - ERAGodot.Prototype.CspScript.Constants.ViewModels
+  langs:
+  - csharp
+  - vb
+  name: ERAGodot.Prototype.CspScript.Constants
+  nameWithType: ERAGodot.Prototype.CspScript.Constants
+  fullName: ERAGodot.Prototype.CspScript.Constants
+  type: Namespace
+  assemblies:
+  - era-engine
+references:
+- uid: ERAGodot.Prototype.CspScript.Constants.FileExtensions
+  commentId: T:ERAGodot.Prototype.CspScript.Constants.FileExtensions
+  href: ERAGodot.Prototype.CspScript.Constants.FileExtensions.html
+  name: FileExtensions
+  nameWithType: FileExtensions
+  fullName: ERAGodot.Prototype.CspScript.Constants.FileExtensions
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  commentId: T:ERAGodot.Prototype.CspScript.Constants.ViewModels
+  parent: ERAGodot.Prototype.CspScript.Constants
+  href: ERAGodot.Prototype.CspScript.Constants.ViewModels.html
+  name: ViewModels
+  nameWithType: ViewModels
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels
+- uid: ERAGodot.Prototype.CspScript.Constants
+  commentId: N:ERAGodot.Prototype.CspScript.Constants
+  href: ERAGodot.html
+  name: ERAGodot.Prototype.CspScript.Constants
+  nameWithType: ERAGodot.Prototype.CspScript.Constants
+  fullName: ERAGodot.Prototype.CspScript.Constants
+  spec.csharp:
+  - uid: ERAGodot
+    name: ERAGodot
+    href: ERAGodot.html
+  - name: .
+  - uid: ERAGodot.Prototype
+    name: Prototype
+    href: ERAGodot.Prototype.html
+  - name: .
+  - uid: ERAGodot.Prototype.CspScript
+    name: CspScript
+    href: ERAGodot.Prototype.CspScript.html
+  - name: .
+  - uid: ERAGodot.Prototype.CspScript.Constants
+    name: Constants
+    href: ERAGodot.Prototype.CspScript.Constants.html
+  spec.vb:
+  - uid: ERAGodot
+    name: ERAGodot
+    href: ERAGodot.html
+  - name: .
+  - uid: ERAGodot.Prototype
+    name: Prototype
+    href: ERAGodot.Prototype.html
+  - name: .
+  - uid: ERAGodot.Prototype.CspScript
+    name: CspScript
+    href: ERAGodot.Prototype.CspScript.html
+  - name: .
+  - uid: ERAGodot.Prototype.CspScript.Constants
+    name: Constants
+    href: ERAGodot.Prototype.CspScript.Constants.html

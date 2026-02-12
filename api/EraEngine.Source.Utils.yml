@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: EraEngine.Source.Utils
+  commentId: N:EraEngine.Source.Utils
+  id: EraEngine.Source.Utils
+  children:
+  - EraEngine.Source.Utils.Log
+  langs:
+  - csharp
+  - vb
+  name: EraEngine.Source.Utils
+  nameWithType: EraEngine.Source.Utils
+  fullName: EraEngine.Source.Utils
+  type: Namespace
+  assemblies:
+  - era-engine
+references:
+- uid: EraEngine.Source.Utils.Log
+  commentId: T:EraEngine.Source.Utils.Log
+  parent: EraEngine.Source.Utils
+  href: EraEngine.Source.Utils.Log.html
+  name: Log
+  nameWithType: Log
+  fullName: EraEngine.Source.Utils.Log
+- uid: EraEngine.Source.Utils
+  commentId: N:EraEngine.Source.Utils
+  href: EraEngine.html
+  name: EraEngine.Source.Utils
+  nameWithType: EraEngine.Source.Utils
+  fullName: EraEngine.Source.Utils
+  spec.csharp:
+  - uid: EraEngine
+    name: EraEngine
+    href: EraEngine.html
+  - name: .
+  - uid: EraEngine.Source
+    name: Source
+    href: EraEngine.Source.html
+  - name: .
+  - uid: EraEngine.Source.Utils
+    name: Utils
+    href: EraEngine.Source.Utils.html
+  spec.vb:
+  - uid: EraEngine
+    name: EraEngine
+    href: EraEngine.html
+  - name: .
+  - uid: EraEngine.Source
+    name: Source
+    href: EraEngine.Source.html
+  - name: .
+  - uid: EraEngine.Source.Utils
+    name: Utils
+    href: EraEngine.Source.Utils.html

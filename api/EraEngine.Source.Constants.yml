@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: EraEngine.Source.Constants
+  commentId: N:EraEngine.Source.Constants
+  id: EraEngine.Source.Constants
+  children:
+  - EraEngine.Source.Constants.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: EraEngine.Source.Constants
+  nameWithType: EraEngine.Source.Constants
+  fullName: EraEngine.Source.Constants
+  type: Namespace
+  assemblies:
+  - era-engine
+references:
+- uid: EraEngine.Source.Constants.LogLevel
+  commentId: T:EraEngine.Source.Constants.LogLevel
+  parent: EraEngine.Source.Constants
+  href: EraEngine.Source.Constants.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: EraEngine.Source.Constants.LogLevel
+- uid: EraEngine.Source.Constants
+  commentId: N:EraEngine.Source.Constants
+  href: EraEngine.html
+  name: EraEngine.Source.Constants
+  nameWithType: EraEngine.Source.Constants
+  fullName: EraEngine.Source.Constants
+  spec.csharp:
+  - uid: EraEngine
+    name: EraEngine
+    href: EraEngine.html
+  - name: .
+  - uid: EraEngine.Source
+    name: Source
+    href: EraEngine.Source.html
+  - name: .
+  - uid: EraEngine.Source.Constants
+    name: Constants
+    href: EraEngine.Source.Constants.html
+  spec.vb:
+  - uid: EraEngine
+    name: EraEngine
+    href: EraEngine.html
+  - name: .
+  - uid: EraEngine.Source
+    name: Source
+    href: EraEngine.Source.html
+  - name: .
+  - uid: EraEngine.Source.Constants
+    name: Constants
+    href: EraEngine.Source.Constants.html

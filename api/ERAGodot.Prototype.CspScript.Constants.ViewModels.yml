@@ -1,0 +1,317 @@
+### YamlMime:ManagedReference
+items:
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  commentId: T:ERAGodot.Prototype.CspScript.Constants.ViewModels
+  id: ViewModels
+  parent: ERAGodot.Prototype.CspScript.Constants
+  children:
+  - ERAGodot.Prototype.CspScript.Constants.ViewModels.Box
+  - ERAGodot.Prototype.CspScript.Constants.ViewModels.ButtonUnit
+  - ERAGodot.Prototype.CspScript.Constants.ViewModels.Controls
+  - ERAGodot.Prototype.CspScript.Constants.ViewModels.HBox
+  - ERAGodot.Prototype.CspScript.Constants.ViewModels.Suite
+  - ERAGodot.Prototype.CspScript.Constants.ViewModels.TextUnit
+  - ERAGodot.Prototype.CspScript.Constants.ViewModels.Unit
+  - ERAGodot.Prototype.CspScript.Constants.ViewModels.VBox
+  - ERAGodot.Prototype.CspScript.Constants.ViewModels.View
+  langs:
+  - csharp
+  - vb
+  name: ViewModels
+  nameWithType: ViewModels
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  type: Enum
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Constants/ViewModels.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: ViewModels
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Constants/ViewModels.cs
+    startLine: 2
+  assemblies:
+  - era-engine
+  namespace: ERAGodot.Prototype.CspScript.Constants
+  syntax:
+    content: public enum ViewModels
+    content.vb: Public Enum ViewModels
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels.Unit
+  commentId: F:ERAGodot.Prototype.CspScript.Constants.ViewModels.Unit
+  id: Unit
+  parent: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  langs:
+  - csharp
+  - vb
+  name: Unit
+  nameWithType: ViewModels.Unit
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels.Unit
+  type: Field
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Constants/ViewModels.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Unit
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Constants/ViewModels.cs
+    startLine: 4
+  assemblies:
+  - era-engine
+  namespace: ERAGodot.Prototype.CspScript.Constants
+  syntax:
+    content: Unit = 0
+    return:
+      type: ERAGodot.Prototype.CspScript.Constants.ViewModels
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels.TextUnit
+  commentId: F:ERAGodot.Prototype.CspScript.Constants.ViewModels.TextUnit
+  id: TextUnit
+  parent: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  langs:
+  - csharp
+  - vb
+  name: TextUnit
+  nameWithType: ViewModels.TextUnit
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels.TextUnit
+  type: Field
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Constants/ViewModels.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: TextUnit
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Constants/ViewModels.cs
+    startLine: 5
+  assemblies:
+  - era-engine
+  namespace: ERAGodot.Prototype.CspScript.Constants
+  syntax:
+    content: TextUnit = 1
+    return:
+      type: ERAGodot.Prototype.CspScript.Constants.ViewModels
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels.ButtonUnit
+  commentId: F:ERAGodot.Prototype.CspScript.Constants.ViewModels.ButtonUnit
+  id: ButtonUnit
+  parent: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  langs:
+  - csharp
+  - vb
+  name: ButtonUnit
+  nameWithType: ViewModels.ButtonUnit
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels.ButtonUnit
+  type: Field
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Constants/ViewModels.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: ButtonUnit
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Constants/ViewModels.cs
+    startLine: 6
+  assemblies:
+  - era-engine
+  namespace: ERAGodot.Prototype.CspScript.Constants
+  syntax:
+    content: ButtonUnit = 2
+    return:
+      type: ERAGodot.Prototype.CspScript.Constants.ViewModels
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels.Box
+  commentId: F:ERAGodot.Prototype.CspScript.Constants.ViewModels.Box
+  id: Box
+  parent: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  langs:
+  - csharp
+  - vb
+  name: Box
+  nameWithType: ViewModels.Box
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels.Box
+  type: Field
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Constants/ViewModels.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Box
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Constants/ViewModels.cs
+    startLine: 7
+  assemblies:
+  - era-engine
+  namespace: ERAGodot.Prototype.CspScript.Constants
+  syntax:
+    content: Box = 3
+    return:
+      type: ERAGodot.Prototype.CspScript.Constants.ViewModels
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels.HBox
+  commentId: F:ERAGodot.Prototype.CspScript.Constants.ViewModels.HBox
+  id: HBox
+  parent: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  langs:
+  - csharp
+  - vb
+  name: HBox
+  nameWithType: ViewModels.HBox
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels.HBox
+  type: Field
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Constants/ViewModels.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: HBox
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Constants/ViewModels.cs
+    startLine: 8
+  assemblies:
+  - era-engine
+  namespace: ERAGodot.Prototype.CspScript.Constants
+  syntax:
+    content: HBox = 4
+    return:
+      type: ERAGodot.Prototype.CspScript.Constants.ViewModels
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels.VBox
+  commentId: F:ERAGodot.Prototype.CspScript.Constants.ViewModels.VBox
+  id: VBox
+  parent: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  langs:
+  - csharp
+  - vb
+  name: VBox
+  nameWithType: ViewModels.VBox
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels.VBox
+  type: Field
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Constants/ViewModels.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: VBox
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Constants/ViewModels.cs
+    startLine: 9
+  assemblies:
+  - era-engine
+  namespace: ERAGodot.Prototype.CspScript.Constants
+  syntax:
+    content: VBox = 5
+    return:
+      type: ERAGodot.Prototype.CspScript.Constants.ViewModels
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels.Suite
+  commentId: F:ERAGodot.Prototype.CspScript.Constants.ViewModels.Suite
+  id: Suite
+  parent: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  langs:
+  - csharp
+  - vb
+  name: Suite
+  nameWithType: ViewModels.Suite
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels.Suite
+  type: Field
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Constants/ViewModels.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Suite
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Constants/ViewModels.cs
+    startLine: 10
+  assemblies:
+  - era-engine
+  namespace: ERAGodot.Prototype.CspScript.Constants
+  syntax:
+    content: Suite = 6
+    return:
+      type: ERAGodot.Prototype.CspScript.Constants.ViewModels
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels.View
+  commentId: F:ERAGodot.Prototype.CspScript.Constants.ViewModels.View
+  id: View
+  parent: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  langs:
+  - csharp
+  - vb
+  name: View
+  nameWithType: ViewModels.View
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels.View
+  type: Field
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Constants/ViewModels.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: View
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Constants/ViewModels.cs
+    startLine: 11
+  assemblies:
+  - era-engine
+  namespace: ERAGodot.Prototype.CspScript.Constants
+  syntax:
+    content: View = 7
+    return:
+      type: ERAGodot.Prototype.CspScript.Constants.ViewModels
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels.Controls
+  commentId: F:ERAGodot.Prototype.CspScript.Constants.ViewModels.Controls
+  id: Controls
+  parent: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  langs:
+  - csharp
+  - vb
+  name: Controls
+  nameWithType: ViewModels.Controls
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels.Controls
+  type: Field
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Constants/ViewModels.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Controls
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Constants/ViewModels.cs
+    startLine: 12
+  assemblies:
+  - era-engine
+  namespace: ERAGodot.Prototype.CspScript.Constants
+  syntax:
+    content: Controls = 8
+    return:
+      type: ERAGodot.Prototype.CspScript.Constants.ViewModels
+references:
+- uid: ERAGodot.Prototype.CspScript.Constants
+  commentId: N:ERAGodot.Prototype.CspScript.Constants
+  href: ERAGodot.html
+  name: ERAGodot.Prototype.CspScript.Constants
+  nameWithType: ERAGodot.Prototype.CspScript.Constants
+  fullName: ERAGodot.Prototype.CspScript.Constants
+  spec.csharp:
+  - uid: ERAGodot
+    name: ERAGodot
+    href: ERAGodot.html
+  - name: .
+  - uid: ERAGodot.Prototype
+    name: Prototype
+    href: ERAGodot.Prototype.html
+  - name: .
+  - uid: ERAGodot.Prototype.CspScript
+    name: CspScript
+    href: ERAGodot.Prototype.CspScript.html
+  - name: .
+  - uid: ERAGodot.Prototype.CspScript.Constants
+    name: Constants
+    href: ERAGodot.Prototype.CspScript.Constants.html
+  spec.vb:
+  - uid: ERAGodot
+    name: ERAGodot
+    href: ERAGodot.html
+  - name: .
+  - uid: ERAGodot.Prototype
+    name: Prototype
+    href: ERAGodot.Prototype.html
+  - name: .
+  - uid: ERAGodot.Prototype.CspScript
+    name: CspScript
+    href: ERAGodot.Prototype.CspScript.html
+  - name: .
+  - uid: ERAGodot.Prototype.CspScript.Constants
+    name: Constants
+    href: ERAGodot.Prototype.CspScript.Constants.html
+- uid: ERAGodot.Prototype.CspScript.Constants.ViewModels
+  commentId: T:ERAGodot.Prototype.CspScript.Constants.ViewModels
+  parent: ERAGodot.Prototype.CspScript.Constants
+  href: ERAGodot.Prototype.CspScript.Constants.ViewModels.html
+  name: ViewModels
+  nameWithType: ViewModels
+  fullName: ERAGodot.Prototype.CspScript.Constants.ViewModels

@@ -1,0 +1,346 @@
+### YamlMime:ManagedReference
+items:
+- uid: EraEngine.Source.Constants.LogLevel
+  commentId: T:EraEngine.Source.Constants.LogLevel
+  id: LogLevel
+  parent: EraEngine.Source.Constants
+  children:
+  - EraEngine.Source.Constants.LogLevel.Critical
+  - EraEngine.Source.Constants.LogLevel.Debug
+  - EraEngine.Source.Constants.LogLevel.Error
+  - EraEngine.Source.Constants.LogLevel.Information
+  - EraEngine.Source.Constants.LogLevel.None
+  - EraEngine.Source.Constants.LogLevel.Trace
+  - EraEngine.Source.Constants.LogLevel.Warning
+  langs:
+  - csharp
+  - vb
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: EraEngine.Source.Constants.LogLevel
+  type: Enum
+  source:
+    remote:
+      path: Source/Constants/LogLevel.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: LogLevel
+    path: ../ERA-Engine/Source/Constants/LogLevel.cs
+    startLine: 5
+  assemblies:
+  - era-engine
+  namespace: EraEngine.Source.Constants
+  summary: Defines the severity of log messages.
+  example: []
+  syntax:
+    content: public enum LogLevel
+    content.vb: Public Enum LogLevel
+  extensionMethods:
+  - EraEngine.Source.Constants.LogLevel.EraEngine.Source.Utils.Log.GetAbbreviation
+- uid: EraEngine.Source.Constants.LogLevel.Trace
+  commentId: F:EraEngine.Source.Constants.LogLevel.Trace
+  id: Trace
+  parent: EraEngine.Source.Constants.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Trace
+  nameWithType: LogLevel.Trace
+  fullName: EraEngine.Source.Constants.LogLevel.Trace
+  type: Field
+  source:
+    remote:
+      path: Source/Constants/LogLevel.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Trace
+    path: ../ERA-Engine/Source/Constants/LogLevel.cs
+    startLine: 7
+  assemblies:
+  - era-engine
+  namespace: EraEngine.Source.Constants
+  syntax:
+    content: Trace = 0
+    return:
+      type: EraEngine.Source.Constants.LogLevel
+- uid: EraEngine.Source.Constants.LogLevel.Debug
+  commentId: F:EraEngine.Source.Constants.LogLevel.Debug
+  id: Debug
+  parent: EraEngine.Source.Constants.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: LogLevel.Debug
+  fullName: EraEngine.Source.Constants.LogLevel.Debug
+  type: Field
+  source:
+    remote:
+      path: Source/Constants/LogLevel.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Debug
+    path: ../ERA-Engine/Source/Constants/LogLevel.cs
+    startLine: 8
+  assemblies:
+  - era-engine
+  namespace: EraEngine.Source.Constants
+  syntax:
+    content: Debug = 1
+    return:
+      type: EraEngine.Source.Constants.LogLevel
+- uid: EraEngine.Source.Constants.LogLevel.Information
+  commentId: F:EraEngine.Source.Constants.LogLevel.Information
+  id: Information
+  parent: EraEngine.Source.Constants.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Information
+  nameWithType: LogLevel.Information
+  fullName: EraEngine.Source.Constants.LogLevel.Information
+  type: Field
+  source:
+    remote:
+      path: Source/Constants/LogLevel.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Information
+    path: ../ERA-Engine/Source/Constants/LogLevel.cs
+    startLine: 9
+  assemblies:
+  - era-engine
+  namespace: EraEngine.Source.Constants
+  syntax:
+    content: Information = 2
+    return:
+      type: EraEngine.Source.Constants.LogLevel
+- uid: EraEngine.Source.Constants.LogLevel.Warning
+  commentId: F:EraEngine.Source.Constants.LogLevel.Warning
+  id: Warning
+  parent: EraEngine.Source.Constants.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: LogLevel.Warning
+  fullName: EraEngine.Source.Constants.LogLevel.Warning
+  type: Field
+  source:
+    remote:
+      path: Source/Constants/LogLevel.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Warning
+    path: ../ERA-Engine/Source/Constants/LogLevel.cs
+    startLine: 10
+  assemblies:
+  - era-engine
+  namespace: EraEngine.Source.Constants
+  syntax:
+    content: Warning = 3
+    return:
+      type: EraEngine.Source.Constants.LogLevel
+- uid: EraEngine.Source.Constants.LogLevel.Error
+  commentId: F:EraEngine.Source.Constants.LogLevel.Error
+  id: Error
+  parent: EraEngine.Source.Constants.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: LogLevel.Error
+  fullName: EraEngine.Source.Constants.LogLevel.Error
+  type: Field
+  source:
+    remote:
+      path: Source/Constants/LogLevel.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Error
+    path: ../ERA-Engine/Source/Constants/LogLevel.cs
+    startLine: 11
+  assemblies:
+  - era-engine
+  namespace: EraEngine.Source.Constants
+  syntax:
+    content: Error = 4
+    return:
+      type: EraEngine.Source.Constants.LogLevel
+- uid: EraEngine.Source.Constants.LogLevel.Critical
+  commentId: F:EraEngine.Source.Constants.LogLevel.Critical
+  id: Critical
+  parent: EraEngine.Source.Constants.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Critical
+  nameWithType: LogLevel.Critical
+  fullName: EraEngine.Source.Constants.LogLevel.Critical
+  type: Field
+  source:
+    remote:
+      path: Source/Constants/LogLevel.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Critical
+    path: ../ERA-Engine/Source/Constants/LogLevel.cs
+    startLine: 12
+  assemblies:
+  - era-engine
+  namespace: EraEngine.Source.Constants
+  syntax:
+    content: Critical = 5
+    return:
+      type: EraEngine.Source.Constants.LogLevel
+- uid: EraEngine.Source.Constants.LogLevel.None
+  commentId: F:EraEngine.Source.Constants.LogLevel.None
+  id: None
+  parent: EraEngine.Source.Constants.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: LogLevel.None
+  fullName: EraEngine.Source.Constants.LogLevel.None
+  type: Field
+  source:
+    remote:
+      path: Source/Constants/LogLevel.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: None
+    path: ../ERA-Engine/Source/Constants/LogLevel.cs
+    startLine: 13
+  assemblies:
+  - era-engine
+  namespace: EraEngine.Source.Constants
+  syntax:
+    content: None = 6
+    return:
+      type: EraEngine.Source.Constants.LogLevel
+references:
+- uid: EraEngine.Source.Constants
+  commentId: N:EraEngine.Source.Constants
+  href: EraEngine.html
+  name: EraEngine.Source.Constants
+  nameWithType: EraEngine.Source.Constants
+  fullName: EraEngine.Source.Constants
+  spec.csharp:
+  - uid: EraEngine
+    name: EraEngine
+    href: EraEngine.html
+  - name: .
+  - uid: EraEngine.Source
+    name: Source
+    href: EraEngine.Source.html
+  - name: .
+  - uid: EraEngine.Source.Constants
+    name: Constants
+    href: EraEngine.Source.Constants.html
+  spec.vb:
+  - uid: EraEngine
+    name: EraEngine
+    href: EraEngine.html
+  - name: .
+  - uid: EraEngine.Source
+    name: Source
+    href: EraEngine.Source.html
+  - name: .
+  - uid: EraEngine.Source.Constants
+    name: Constants
+    href: EraEngine.Source.Constants.html
+- uid: EraEngine.Source.Constants.LogLevel.EraEngine.Source.Utils.Log.GetAbbreviation
+  commentId: M:EraEngine.Source.Utils.Log.GetAbbreviation(EraEngine.Source.Constants.LogLevel)
+  parent: EraEngine.Source.Utils.Log
+  definition: EraEngine.Source.Utils.Log.GetAbbreviation(EraEngine.Source.Constants.LogLevel)
+  href: EraEngine.Source.Utils.Log.html#EraEngine_Source_Utils_Log_GetAbbreviation_EraEngine_Source_Constants_LogLevel_
+  name: GetAbbreviation(LogLevel)
+  nameWithType: Log.GetAbbreviation(LogLevel)
+  fullName: EraEngine.Source.Utils.Log.GetAbbreviation(EraEngine.Source.Constants.LogLevel)
+  spec.csharp:
+  - uid: EraEngine.Source.Utils.Log.GetAbbreviation(EraEngine.Source.Constants.LogLevel)
+    name: GetAbbreviation
+    href: EraEngine.Source.Utils.Log.html#EraEngine_Source_Utils_Log_GetAbbreviation_EraEngine_Source_Constants_LogLevel_
+  - name: (
+  - uid: EraEngine.Source.Constants.LogLevel
+    name: LogLevel
+    href: EraEngine.Source.Constants.LogLevel.html
+  - name: )
+  spec.vb:
+  - uid: EraEngine.Source.Utils.Log.GetAbbreviation(EraEngine.Source.Constants.LogLevel)
+    name: GetAbbreviation
+    href: EraEngine.Source.Utils.Log.html#EraEngine_Source_Utils_Log_GetAbbreviation_EraEngine_Source_Constants_LogLevel_
+  - name: (
+  - uid: EraEngine.Source.Constants.LogLevel
+    name: LogLevel
+    href: EraEngine.Source.Constants.LogLevel.html
+  - name: )
+- uid: EraEngine.Source.Utils.Log.GetAbbreviation(EraEngine.Source.Constants.LogLevel)
+  commentId: M:EraEngine.Source.Utils.Log.GetAbbreviation(EraEngine.Source.Constants.LogLevel)
+  href: EraEngine.Source.Utils.Log.html#EraEngine_Source_Utils_Log_GetAbbreviation_EraEngine_Source_Constants_LogLevel_
+  name: GetAbbreviation(LogLevel)
+  nameWithType: Log.GetAbbreviation(LogLevel)
+  fullName: EraEngine.Source.Utils.Log.GetAbbreviation(EraEngine.Source.Constants.LogLevel)
+  spec.csharp:
+  - uid: EraEngine.Source.Utils.Log.GetAbbreviation(EraEngine.Source.Constants.LogLevel)
+    name: GetAbbreviation
+    href: EraEngine.Source.Utils.Log.html#EraEngine_Source_Utils_Log_GetAbbreviation_EraEngine_Source_Constants_LogLevel_
+  - name: (
+  - uid: EraEngine.Source.Constants.LogLevel
+    name: LogLevel
+    href: EraEngine.Source.Constants.LogLevel.html
+  - name: )
+  spec.vb:
+  - uid: EraEngine.Source.Utils.Log.GetAbbreviation(EraEngine.Source.Constants.LogLevel)
+    name: GetAbbreviation
+    href: EraEngine.Source.Utils.Log.html#EraEngine_Source_Utils_Log_GetAbbreviation_EraEngine_Source_Constants_LogLevel_
+  - name: (
+  - uid: EraEngine.Source.Constants.LogLevel
+    name: LogLevel
+    href: EraEngine.Source.Constants.LogLevel.html
+  - name: )
+- uid: EraEngine.Source.Utils.Log
+  commentId: T:EraEngine.Source.Utils.Log
+  parent: EraEngine.Source.Utils
+  href: EraEngine.Source.Utils.Log.html
+  name: Log
+  nameWithType: Log
+  fullName: EraEngine.Source.Utils.Log
+- uid: EraEngine.Source.Utils
+  commentId: N:EraEngine.Source.Utils
+  href: EraEngine.html
+  name: EraEngine.Source.Utils
+  nameWithType: EraEngine.Source.Utils
+  fullName: EraEngine.Source.Utils
+  spec.csharp:
+  - uid: EraEngine
+    name: EraEngine
+    href: EraEngine.html
+  - name: .
+  - uid: EraEngine.Source
+    name: Source
+    href: EraEngine.Source.html
+  - name: .
+  - uid: EraEngine.Source.Utils
+    name: Utils
+    href: EraEngine.Source.Utils.html
+  spec.vb:
+  - uid: EraEngine
+    name: EraEngine
+    href: EraEngine.html
+  - name: .
+  - uid: EraEngine.Source
+    name: Source
+    href: EraEngine.Source.html
+  - name: .
+  - uid: EraEngine.Source.Utils
+    name: Utils
+    href: EraEngine.Source.Utils.html
+- uid: EraEngine.Source.Constants.LogLevel
+  commentId: T:EraEngine.Source.Constants.LogLevel
+  parent: EraEngine.Source.Constants
+  href: EraEngine.Source.Constants.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: EraEngine.Source.Constants.LogLevel

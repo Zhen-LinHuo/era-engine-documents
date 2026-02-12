@@ -1,0 +1,705 @@
+### YamlMime:ManagedReference
+items:
+- uid: EraEngine.ViewService.PropertyName
+  commentId: T:EraEngine.ViewService.PropertyName
+  id: ViewService.PropertyName
+  parent: EraEngine
+  children:
+  - EraEngine.ViewService.PropertyName.BoxModels
+  - EraEngine.ViewService.PropertyName.CurrentSuite
+  - EraEngine.ViewService.PropertyName.CurrentUnit
+  - EraEngine.ViewService.PropertyName.MainContent
+  - EraEngine.ViewService.PropertyName.ModelService
+  - EraEngine.ViewService.PropertyName.SuiteModels
+  - EraEngine.ViewService.PropertyName.UnitModels
+  - EraEngine.ViewService.PropertyName.ViewModel
+  langs:
+  - csharp
+  - vb
+  name: ViewService.PropertyName
+  nameWithType: ViewService.PropertyName
+  fullName: EraEngine.ViewService.PropertyName
+  type: Class
+  source:
+    remote:
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: PropertyName
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+    startLine: 11
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  summary: Cached StringNames for the properties and fields contained in this class, for fast lookup.
+  example: []
+  syntax:
+    content: 'public class ViewService.PropertyName : Node.PropertyName'
+    content.vb: Public Class ViewService.PropertyName Inherits Node.PropertyName
+  inheritance:
+  - System.Object
+  - Godot.GodotObject.PropertyName
+  - Godot.Node.PropertyName
+  inheritedMembers:
+  - Godot.Node.PropertyName._ImportPath
+  - Godot.Node.PropertyName.Name
+  - Godot.Node.PropertyName.UniqueNameInOwner
+  - Godot.Node.PropertyName.SceneFilePath
+  - Godot.Node.PropertyName.Owner
+  - Godot.Node.PropertyName.Multiplayer
+  - Godot.Node.PropertyName.ProcessMode
+  - Godot.Node.PropertyName.ProcessPriority
+  - Godot.Node.PropertyName.ProcessPhysicsPriority
+  - Godot.Node.PropertyName.ProcessThreadGroup
+  - Godot.Node.PropertyName.ProcessThreadGroupOrder
+  - Godot.Node.PropertyName.ProcessThreadMessages
+  - Godot.Node.PropertyName.PhysicsInterpolationMode
+  - Godot.Node.PropertyName.AutoTranslateMode
+  - Godot.Node.PropertyName.EditorDescription
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: EraEngine.ViewService.PropertyName.ModelService
+  commentId: F:EraEngine.ViewService.PropertyName.ModelService
+  id: ModelService
+  parent: EraEngine.ViewService.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: ModelService
+  nameWithType: ViewService.PropertyName.ModelService
+  fullName: EraEngine.ViewService.PropertyName.ModelService
+  type: Field
+  source:
+    remote:
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: ModelService
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+    startLine: 15
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  summary: Cached name for the 'ModelService' property.
+  example: []
+  syntax:
+    content: public static readonly StringName ModelService
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly ModelService As StringName
+- uid: EraEngine.ViewService.PropertyName.UnitModels
+  commentId: F:EraEngine.ViewService.PropertyName.UnitModels
+  id: UnitModels
+  parent: EraEngine.ViewService.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: UnitModels
+  nameWithType: ViewService.PropertyName.UnitModels
+  fullName: EraEngine.ViewService.PropertyName.UnitModels
+  type: Field
+  source:
+    remote:
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: UnitModels
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+    startLine: 19
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  summary: Cached name for the 'UnitModels' property.
+  example: []
+  syntax:
+    content: public static readonly StringName UnitModels
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly UnitModels As StringName
+- uid: EraEngine.ViewService.PropertyName.SuiteModels
+  commentId: F:EraEngine.ViewService.PropertyName.SuiteModels
+  id: SuiteModels
+  parent: EraEngine.ViewService.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: SuiteModels
+  nameWithType: ViewService.PropertyName.SuiteModels
+  fullName: EraEngine.ViewService.PropertyName.SuiteModels
+  type: Field
+  source:
+    remote:
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: SuiteModels
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+    startLine: 23
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  summary: Cached name for the 'SuiteModels' property.
+  example: []
+  syntax:
+    content: public static readonly StringName SuiteModels
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly SuiteModels As StringName
+- uid: EraEngine.ViewService.PropertyName.BoxModels
+  commentId: F:EraEngine.ViewService.PropertyName.BoxModels
+  id: BoxModels
+  parent: EraEngine.ViewService.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: BoxModels
+  nameWithType: ViewService.PropertyName.BoxModels
+  fullName: EraEngine.ViewService.PropertyName.BoxModels
+  type: Field
+  source:
+    remote:
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: BoxModels
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+    startLine: 27
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  summary: Cached name for the 'BoxModels' property.
+  example: []
+  syntax:
+    content: public static readonly StringName BoxModels
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly BoxModels As StringName
+- uid: EraEngine.ViewService.PropertyName.ViewModel
+  commentId: F:EraEngine.ViewService.PropertyName.ViewModel
+  id: ViewModel
+  parent: EraEngine.ViewService.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: ViewModel
+  nameWithType: ViewService.PropertyName.ViewModel
+  fullName: EraEngine.ViewService.PropertyName.ViewModel
+  type: Field
+  source:
+    remote:
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: ViewModel
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+    startLine: 31
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  summary: Cached name for the 'ViewModel' property.
+  example: []
+  syntax:
+    content: public static readonly StringName ViewModel
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly ViewModel As StringName
+- uid: EraEngine.ViewService.PropertyName.MainContent
+  commentId: F:EraEngine.ViewService.PropertyName.MainContent
+  id: MainContent
+  parent: EraEngine.ViewService.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: MainContent
+  nameWithType: ViewService.PropertyName.MainContent
+  fullName: EraEngine.ViewService.PropertyName.MainContent
+  type: Field
+  source:
+    remote:
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: MainContent
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+    startLine: 35
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  summary: Cached name for the 'MainContent' property.
+  example: []
+  syntax:
+    content: public static readonly StringName MainContent
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly MainContent As StringName
+- uid: EraEngine.ViewService.PropertyName.CurrentSuite
+  commentId: F:EraEngine.ViewService.PropertyName.CurrentSuite
+  id: CurrentSuite
+  parent: EraEngine.ViewService.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: CurrentSuite
+  nameWithType: ViewService.PropertyName.CurrentSuite
+  fullName: EraEngine.ViewService.PropertyName.CurrentSuite
+  type: Field
+  source:
+    remote:
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: CurrentSuite
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+    startLine: 39
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  summary: Cached name for the 'CurrentSuite' property.
+  example: []
+  syntax:
+    content: public static readonly StringName CurrentSuite
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly CurrentSuite As StringName
+- uid: EraEngine.ViewService.PropertyName.CurrentUnit
+  commentId: F:EraEngine.ViewService.PropertyName.CurrentUnit
+  id: CurrentUnit
+  parent: EraEngine.ViewService.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: CurrentUnit
+  nameWithType: ViewService.PropertyName.CurrentUnit
+  fullName: EraEngine.ViewService.PropertyName.CurrentUnit
+  type: Field
+  source:
+    remote:
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: CurrentUnit
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.ViewService_ScriptProperties.generated.cs
+    startLine: 43
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  summary: Cached name for the 'CurrentUnit' property.
+  example: []
+  syntax:
+    content: public static readonly StringName CurrentUnit
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly CurrentUnit As StringName
+references:
+- uid: EraEngine
+  commentId: N:EraEngine
+  href: EraEngine.html
+  name: EraEngine
+  nameWithType: EraEngine
+  fullName: EraEngine
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Godot.GodotObject.PropertyName
+  commentId: T:Godot.GodotObject.PropertyName
+  parent: Godot
+  isExternal: true
+  name: GodotObject.PropertyName
+  nameWithType: GodotObject.PropertyName
+  fullName: Godot.GodotObject.PropertyName
+  spec.csharp:
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+  - name: .
+  - uid: Godot.GodotObject.PropertyName
+    name: PropertyName
+    isExternal: true
+  spec.vb:
+  - uid: Godot.GodotObject
+    name: GodotObject
+    isExternal: true
+  - name: .
+  - uid: Godot.GodotObject.PropertyName
+    name: PropertyName
+    isExternal: true
+- uid: Godot.Node.PropertyName
+  commentId: T:Godot.Node.PropertyName
+  parent: Godot
+  isExternal: true
+  name: Node.PropertyName
+  nameWithType: Node.PropertyName
+  fullName: Godot.Node.PropertyName
+  spec.csharp:
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: .
+  - uid: Godot.Node.PropertyName
+    name: PropertyName
+    isExternal: true
+  spec.vb:
+  - uid: Godot.Node
+    name: Node
+    isExternal: true
+  - name: .
+  - uid: Godot.Node.PropertyName
+    name: PropertyName
+    isExternal: true
+- uid: Godot.Node.PropertyName._ImportPath
+  commentId: F:Godot.Node.PropertyName._ImportPath
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: _ImportPath
+  nameWithType: Node.PropertyName._ImportPath
+  fullName: Godot.Node.PropertyName._ImportPath
+- uid: Godot.Node.PropertyName.Name
+  commentId: F:Godot.Node.PropertyName.Name
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: Name
+  nameWithType: Node.PropertyName.Name
+  fullName: Godot.Node.PropertyName.Name
+- uid: Godot.Node.PropertyName.UniqueNameInOwner
+  commentId: F:Godot.Node.PropertyName.UniqueNameInOwner
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: UniqueNameInOwner
+  nameWithType: Node.PropertyName.UniqueNameInOwner
+  fullName: Godot.Node.PropertyName.UniqueNameInOwner
+- uid: Godot.Node.PropertyName.SceneFilePath
+  commentId: F:Godot.Node.PropertyName.SceneFilePath
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: SceneFilePath
+  nameWithType: Node.PropertyName.SceneFilePath
+  fullName: Godot.Node.PropertyName.SceneFilePath
+- uid: Godot.Node.PropertyName.Owner
+  commentId: F:Godot.Node.PropertyName.Owner
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: Owner
+  nameWithType: Node.PropertyName.Owner
+  fullName: Godot.Node.PropertyName.Owner
+- uid: Godot.Node.PropertyName.Multiplayer
+  commentId: F:Godot.Node.PropertyName.Multiplayer
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: Multiplayer
+  nameWithType: Node.PropertyName.Multiplayer
+  fullName: Godot.Node.PropertyName.Multiplayer
+- uid: Godot.Node.PropertyName.ProcessMode
+  commentId: F:Godot.Node.PropertyName.ProcessMode
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: ProcessMode
+  nameWithType: Node.PropertyName.ProcessMode
+  fullName: Godot.Node.PropertyName.ProcessMode
+- uid: Godot.Node.PropertyName.ProcessPriority
+  commentId: F:Godot.Node.PropertyName.ProcessPriority
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: ProcessPriority
+  nameWithType: Node.PropertyName.ProcessPriority
+  fullName: Godot.Node.PropertyName.ProcessPriority
+- uid: Godot.Node.PropertyName.ProcessPhysicsPriority
+  commentId: F:Godot.Node.PropertyName.ProcessPhysicsPriority
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: ProcessPhysicsPriority
+  nameWithType: Node.PropertyName.ProcessPhysicsPriority
+  fullName: Godot.Node.PropertyName.ProcessPhysicsPriority
+- uid: Godot.Node.PropertyName.ProcessThreadGroup
+  commentId: F:Godot.Node.PropertyName.ProcessThreadGroup
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: ProcessThreadGroup
+  nameWithType: Node.PropertyName.ProcessThreadGroup
+  fullName: Godot.Node.PropertyName.ProcessThreadGroup
+- uid: Godot.Node.PropertyName.ProcessThreadGroupOrder
+  commentId: F:Godot.Node.PropertyName.ProcessThreadGroupOrder
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: ProcessThreadGroupOrder
+  nameWithType: Node.PropertyName.ProcessThreadGroupOrder
+  fullName: Godot.Node.PropertyName.ProcessThreadGroupOrder
+- uid: Godot.Node.PropertyName.ProcessThreadMessages
+  commentId: F:Godot.Node.PropertyName.ProcessThreadMessages
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: ProcessThreadMessages
+  nameWithType: Node.PropertyName.ProcessThreadMessages
+  fullName: Godot.Node.PropertyName.ProcessThreadMessages
+- uid: Godot.Node.PropertyName.PhysicsInterpolationMode
+  commentId: F:Godot.Node.PropertyName.PhysicsInterpolationMode
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: PhysicsInterpolationMode
+  nameWithType: Node.PropertyName.PhysicsInterpolationMode
+  fullName: Godot.Node.PropertyName.PhysicsInterpolationMode
+- uid: Godot.Node.PropertyName.AutoTranslateMode
+  commentId: F:Godot.Node.PropertyName.AutoTranslateMode
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: AutoTranslateMode
+  nameWithType: Node.PropertyName.AutoTranslateMode
+  fullName: Godot.Node.PropertyName.AutoTranslateMode
+- uid: Godot.Node.PropertyName.EditorDescription
+  commentId: F:Godot.Node.PropertyName.EditorDescription
+  parent: Godot.Node.PropertyName
+  isExternal: true
+  name: EditorDescription
+  nameWithType: Node.PropertyName.EditorDescription
+  fullName: Godot.Node.PropertyName.EditorDescription
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Godot
+  commentId: N:Godot
+  isExternal: true
+  name: Godot
+  nameWithType: Godot
+  fullName: Godot
+- uid: Godot.StringName
+  commentId: T:Godot.StringName
+  parent: Godot
+  isExternal: true
+  name: StringName
+  nameWithType: StringName
+  fullName: Godot.StringName

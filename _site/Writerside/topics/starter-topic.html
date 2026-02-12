@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>About ERA-Engine (Godot) Document | ERA-Engine Document </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="About ERA-Engine (Godot) Document | ERA-Engine Document ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Zhen-LinHuo/ERA-Engine-Documents/blob/Develop/Writerside/topics/starter-topic.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="ERA-Engine Document">
+            ERA-Engine Document
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="about-era-engine-godot-document">About ERA-Engine (Godot) Document</h1>
+
+<!--Writerside adds this topic when you create a new documentation project.
+You can use it as a sandbox to play with Writerside features, and remove it from the TOC when you don't need it anymore.-->
+<h2 id="add-new-topics">Add new topics</h2>
+<p>You can create empty topics, or choose a template for different types of content that contains some boilerplate structure to help you get started:</p>
+<p><img src="new_topic_options.png" alt="Create new topic options">{ width=450 }{border-effect=line}</p>
+<h2 id="write-content">Write content</h2>
+<p>%product% supports two types of markup: <code>Markdown</code> and <code>XML</code>. More information about formatting page in <code>WriterSide</code> can reference on this <a href="https://www.jetbrains.com/help/writerside/markup-reference.html"><code>Official Document</code></a>.</p>
+<p>When you create a new help article, you can choose between two topic types, but this doesn't mean you have to stick to a single format.
+You can author content in Markdown and extend it with semantic attributes or inject entire XML elements.</p>
+<h2 id="inject-xml">Inject XML</h2>
+<p>For example, this is how you inject a procedure:</p>
+<procedure title="Inject a Procedure" id="inject-a-procedure">
+    <step>
+        <p>Start typing and select a procedure type from the completion suggestions:</p>
+        <img src="completion_procedure.png" alt="completion suggestions for procedure" border-effect="line">
+    </step>
+    <step>
+        <p>Press <shortcut>Tab</shortcut> or <shortcut>Enter</shortcut> to insert the markup.</p>
+    </step>
+</procedure>
+<h2 id="add-interactive-elements">Add interactive elements</h2>
+<h3 id="tabs">Tabs</h3>
+<p>To add switchable content, you can make use of tabs (inject them by starting to type <code>tab</code> on a new line):</p>
+<tabs>
+    <tab title="Markdown">
+        <code-block lang="text">![Alt Text](new_topic_options.png){ width=450 }</code-block>
+    </tab>
+    <tab title="XML">
+        <code-block lang="xml">
+            <![CDATA[<img src="new_topic_options.png" alt="Alt text" width="450px"/>]]></code-block>
+    </tab>
+</tabs>
+<h3 id="collapsible-blocks">Collapsible blocks</h3>
+<p>Apart from injecting entire XML elements, you can use attributes to configure the behavior of certain elements.</p>
+<p>For example, you can collapse a chapter that contains non-essential information:</p>
+<h4 id="supplementary-info-collapsibletrue">Supplementary info {collapsible=&quot;true&quot;}</h4>
+<p>Content under a collapsible header will be collapsed by default, but you can modify the behavior by adding the following attribute: <code>default-state=&quot;expanded&quot;</code></p>
+<h3 id="convert-selection-to-xml">Convert selection to XML</h3>
+<p>If you need to extend an element with more functions, you can convert selected content from Markdown to semantic markup.
+For example, if you want to merge cells in a table, it's much easier to convert it to XML than do this in Markdown.
+Position the caret anywhere in the table and press <shortcut>Alt+Enter</shortcut>:</p>
+<img src="convert_table_to_xml.png" alt="Convert table to XML" width="800" border-effect="line">
+<h2 id="feedback-and-support">Feedback and support</h2>
+<h3 id="writerside-things">WriterSide Things</h3>
+<p>Please report any issues, usability improvements, or feature requests to our <a href="https://youtrack.jetbrains.com/newIssue?project=WRS">YouTrack project</a> (you will need to register).</p>
+<p>You are welcome to join our
+<a href="https://jb.gg/WRS_Slack">public Slack workspace</a>.
+Before you do, please read our <a href="https://www.jetbrains.com/help/writerside/writerside-code-of-conduct.html">Code of conduct</a>.
+We assume that you’ve read and acknowledged it before joining.</p>
+<p>You can also always email us at <a href="mailto:writerside@jetbrains.com">writerside@jetbrains.com</a>.</p>
+<seealso>
+    <category ref="wrs">
+        <a href="https://www.jetbrains.com/help/writerside/markup-reference.html">Markup reference</a>
+        <a href="https://www.jetbrains.com/help/writerside/manage-table-of-contents.html">Reorder topics in the TOC</a>
+        <a href="https://www.jetbrains.com/help/writerside/local-build.html">Build and publish</a>
+        <a href="https://www.jetbrains.com/help/writerside/configure-search.html">Configure Search</a>
+    </category>
+</seealso>
+<h3 id="era-engine-godot-document-things">ERA-Engine (Godot) Document Things</h3>
+<p>Any issues can be reported on our <a href="https://github.com/Zhen-LinHuo/era-engine-documents/issues"><code>GitHub Issues</code></a>.</p>
+<p>Please search issues to make sure there isn't any duplicated issue. If you find the issues you want to post already, just leave a comment under that issue.</p>
+<seealso>
+    <category ref="era-engine-related">
+		<a href="https://github.com/Zhen-LinHuo/ERA-Engine-Godot">ERA-Engine GitHub Repository</a>
+	</category>
+</seealso>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Zhen-LinHuo/ERA-Engine-Documents/blob/Develop/Writerside/topics/starter-topic.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,723 @@
+### YamlMime:ManagedReference
+items:
+- uid: EraEngine.Logger
+  commentId: T:EraEngine.Logger
+  id: Logger
+  parent: EraEngine
+  children:
+  - EraEngine.Logger.#ctor(System.String)
+  - EraEngine.Logger.Error(System.String,System.Exception,System.Int32)
+  - EraEngine.Logger.Error(System.String,System.Int32)
+  - EraEngine.Logger.Error(System.String[])
+  - EraEngine.Logger.Info(System.String,System.Int32)
+  - EraEngine.Logger.Info(System.String[])
+  - EraEngine.Logger.Log(System.String,LogCategory,System.String,System.Int32)
+  - EraEngine.Logger.Warn(System.String,System.Int32)
+  - EraEngine.Logger.Warn(System.String[])
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: Logger
+  fullName: EraEngine.Logger
+  type: Class
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Utils/Logger.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Logger
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Utils/Logger.cs
+    startLine: 6
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  syntax:
+    content: public class Logger
+    content.vb: Public Class Logger
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: EraEngine.Logger.#ctor(System.String)
+  commentId: M:EraEngine.Logger.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: EraEngine.Logger
+  langs:
+  - csharp
+  - vb
+  name: Logger(string)
+  nameWithType: Logger.Logger(string)
+  fullName: EraEngine.Logger.Logger(string)
+  type: Constructor
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Utils/Logger.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: .ctor
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Utils/Logger.cs
+    startLine: 11
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  syntax:
+    content: public Logger(string className)
+    parameters:
+    - id: className
+      type: System.String
+    content.vb: Public Sub New(className As String)
+  overload: EraEngine.Logger.#ctor*
+  nameWithType.vb: Logger.New(String)
+  fullName.vb: EraEngine.Logger.New(String)
+  name.vb: New(String)
+- uid: EraEngine.Logger.Log(System.String,LogCategory,System.String,System.Int32)
+  commentId: M:EraEngine.Logger.Log(System.String,LogCategory,System.String,System.Int32)
+  id: Log(System.String,LogCategory,System.String,System.Int32)
+  parent: EraEngine.Logger
+  langs:
+  - csharp
+  - vb
+  name: Log(string, LogCategory, string, int)
+  nameWithType: Logger.Log(string, LogCategory, string, int)
+  fullName: EraEngine.Logger.Log(string, LogCategory, string, int)
+  type: Method
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Utils/Logger.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Log
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Utils/Logger.cs
+    startLine: 29
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  syntax:
+    content: public void Log(string level, LogCategory category, string message, int line = -1)
+    parameters:
+    - id: level
+      type: System.String
+    - id: category
+      type: LogCategory
+    - id: message
+      type: System.String
+    - id: line
+      type: System.Int32
+    content.vb: Public Sub Log(level As String, category As LogCategory, message As String, line As Integer = -1)
+  overload: EraEngine.Logger.Log*
+  nameWithType.vb: Logger.Log(String, LogCategory, String, Integer)
+  fullName.vb: EraEngine.Logger.Log(String, LogCategory, String, Integer)
+  name.vb: Log(String, LogCategory, String, Integer)
+- uid: EraEngine.Logger.Info(System.String[])
+  commentId: M:EraEngine.Logger.Info(System.String[])
+  id: Info(System.String[])
+  parent: EraEngine.Logger
+  langs:
+  - csharp
+  - vb
+  name: Info(params string[])
+  nameWithType: Logger.Info(params string[])
+  fullName: EraEngine.Logger.Info(params string[])
+  type: Method
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Utils/Logger.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Info
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Utils/Logger.cs
+    startLine: 49
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  syntax:
+    content: >-
+      [Obsolete("The Info with params strings is deprecated, please use new Info with string.")]
+
+      public void Info(params string[] messages)
+    parameters:
+    - id: messages
+      type: System.String[]
+    content.vb: >-
+      <Obsolete("The Info with params strings is deprecated, please use new Info with string.")>
+
+      Public Sub Info(ParamArray messages As String())
+  overload: EraEngine.Logger.Info*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The Info with params strings is deprecated, please use new Info with string.
+  nameWithType.vb: Logger.Info(ParamArray String())
+  fullName.vb: EraEngine.Logger.Info(ParamArray String())
+  name.vb: Info(ParamArray String())
+- uid: EraEngine.Logger.Warn(System.String[])
+  commentId: M:EraEngine.Logger.Warn(System.String[])
+  id: Warn(System.String[])
+  parent: EraEngine.Logger
+  langs:
+  - csharp
+  - vb
+  name: Warn(params string[])
+  nameWithType: Logger.Warn(params string[])
+  fullName: EraEngine.Logger.Warn(params string[])
+  type: Method
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Utils/Logger.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Warn
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Utils/Logger.cs
+    startLine: 52
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  syntax:
+    content: >-
+      [Obsolete("The Warn with params strings is deprecated, please use new Warn with string.")]
+
+      public void Warn(params string[] messages)
+    parameters:
+    - id: messages
+      type: System.String[]
+    content.vb: >-
+      <Obsolete("The Warn with params strings is deprecated, please use new Warn with string.")>
+
+      Public Sub Warn(ParamArray messages As String())
+  overload: EraEngine.Logger.Warn*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The Warn with params strings is deprecated, please use new Warn with string.
+  nameWithType.vb: Logger.Warn(ParamArray String())
+  fullName.vb: EraEngine.Logger.Warn(ParamArray String())
+  name.vb: Warn(ParamArray String())
+- uid: EraEngine.Logger.Error(System.String[])
+  commentId: M:EraEngine.Logger.Error(System.String[])
+  id: Error(System.String[])
+  parent: EraEngine.Logger
+  langs:
+  - csharp
+  - vb
+  name: Error(params string[])
+  nameWithType: Logger.Error(params string[])
+  fullName: EraEngine.Logger.Error(params string[])
+  type: Method
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Utils/Logger.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Error
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Utils/Logger.cs
+    startLine: 55
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  syntax:
+    content: >-
+      [Obsolete("The Error with params strings is deprecated, please use new ERROR with string.")]
+
+      public void Error(params string[] messages)
+    parameters:
+    - id: messages
+      type: System.String[]
+    content.vb: >-
+      <Obsolete("The Error with params strings is deprecated, please use new ERROR with string.")>
+
+      Public Sub [Error](ParamArray messages As String())
+  overload: EraEngine.Logger.Error*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The Error with params strings is deprecated, please use new ERROR with string.
+  nameWithType.vb: Logger.Error(ParamArray String())
+  fullName.vb: EraEngine.Logger.Error(ParamArray String())
+  name.vb: Error(ParamArray String())
+- uid: EraEngine.Logger.Info(System.String,System.Int32)
+  commentId: M:EraEngine.Logger.Info(System.String,System.Int32)
+  id: Info(System.String,System.Int32)
+  parent: EraEngine.Logger
+  langs:
+  - csharp
+  - vb
+  name: Info(string, int)
+  nameWithType: Logger.Info(string, int)
+  fullName: EraEngine.Logger.Info(string, int)
+  type: Method
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Utils/Logger.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Info
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Utils/Logger.cs
+    startLine: 58
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  syntax:
+    content: public void Info(string message, int line = -1)
+    parameters:
+    - id: message
+      type: System.String
+    - id: line
+      type: System.Int32
+    content.vb: Public Sub Info(message As String, line As Integer = -1)
+  overload: EraEngine.Logger.Info*
+  nameWithType.vb: Logger.Info(String, Integer)
+  fullName.vb: EraEngine.Logger.Info(String, Integer)
+  name.vb: Info(String, Integer)
+- uid: EraEngine.Logger.Warn(System.String,System.Int32)
+  commentId: M:EraEngine.Logger.Warn(System.String,System.Int32)
+  id: Warn(System.String,System.Int32)
+  parent: EraEngine.Logger
+  langs:
+  - csharp
+  - vb
+  name: Warn(string, int)
+  nameWithType: Logger.Warn(string, int)
+  fullName: EraEngine.Logger.Warn(string, int)
+  type: Method
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Utils/Logger.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Warn
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Utils/Logger.cs
+    startLine: 61
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  syntax:
+    content: public void Warn(string message, int line = -1)
+    parameters:
+    - id: message
+      type: System.String
+    - id: line
+      type: System.Int32
+    content.vb: Public Sub Warn(message As String, line As Integer = -1)
+  overload: EraEngine.Logger.Warn*
+  nameWithType.vb: Logger.Warn(String, Integer)
+  fullName.vb: EraEngine.Logger.Warn(String, Integer)
+  name.vb: Warn(String, Integer)
+- uid: EraEngine.Logger.Error(System.String,System.Int32)
+  commentId: M:EraEngine.Logger.Error(System.String,System.Int32)
+  id: Error(System.String,System.Int32)
+  parent: EraEngine.Logger
+  langs:
+  - csharp
+  - vb
+  name: Error(string, int)
+  nameWithType: Logger.Error(string, int)
+  fullName: EraEngine.Logger.Error(string, int)
+  type: Method
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Utils/Logger.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Error
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Utils/Logger.cs
+    startLine: 64
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  syntax:
+    content: public void Error(string message, int line = -1)
+    parameters:
+    - id: message
+      type: System.String
+    - id: line
+      type: System.Int32
+    content.vb: Public Sub [Error](message As String, line As Integer = -1)
+  overload: EraEngine.Logger.Error*
+  nameWithType.vb: Logger.Error(String, Integer)
+  fullName.vb: EraEngine.Logger.Error(String, Integer)
+  name.vb: Error(String, Integer)
+- uid: EraEngine.Logger.Error(System.String,System.Exception,System.Int32)
+  commentId: M:EraEngine.Logger.Error(System.String,System.Exception,System.Int32)
+  id: Error(System.String,System.Exception,System.Int32)
+  parent: EraEngine.Logger
+  langs:
+  - csharp
+  - vb
+  name: Error(string, Exception, int)
+  nameWithType: Logger.Error(string, Exception, int)
+  fullName: EraEngine.Logger.Error(string, System.Exception, int)
+  type: Method
+  source:
+    remote:
+      path: era-godot/Prototype/CspScript/Utils/Logger.cs
+      branch: demo/dev
+      repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
+    id: Error
+    path: ../ERA-Engine/era-godot/Prototype/CspScript/Utils/Logger.cs
+    startLine: 67
+  assemblies:
+  - era-engine
+  namespace: EraEngine
+  syntax:
+    content: public void Error(string message, Exception exception, int line = -1)
+    parameters:
+    - id: message
+      type: System.String
+    - id: exception
+      type: System.Exception
+    - id: line
+      type: System.Int32
+    content.vb: Public Sub [Error](message As String, exception As Exception, line As Integer = -1)
+  overload: EraEngine.Logger.Error*
+  nameWithType.vb: Logger.Error(String, Exception, Integer)
+  fullName.vb: EraEngine.Logger.Error(String, System.Exception, Integer)
+  name.vb: Error(String, Exception, Integer)
+references:
+- uid: EraEngine
+  commentId: N:EraEngine
+  href: EraEngine.html
+  name: EraEngine
+  nameWithType: EraEngine
+  fullName: EraEngine
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: EraEngine.Logger.#ctor*
+  commentId: Overload:EraEngine.Logger.#ctor
+  href: EraEngine.Logger.html#EraEngine_Logger__ctor_System_String_
+  name: Logger
+  nameWithType: Logger.Logger
+  fullName: EraEngine.Logger.Logger
+  nameWithType.vb: Logger.New
+  fullName.vb: EraEngine.Logger.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: EraEngine.Logger.Log*
+  commentId: Overload:EraEngine.Logger.Log
+  href: EraEngine.Logger.html#EraEngine_Logger_Log_System_String_LogCategory_System_String_System_Int32_
+  name: Log
+  nameWithType: Logger.Log
+  fullName: EraEngine.Logger.Log
+- uid: LogCategory
+  commentId: T:LogCategory
+  href: LogCategory.html
+  name: LogCategory
+  nameWithType: LogCategory
+  fullName: LogCategory
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: EraEngine.Logger.Info*
+  commentId: Overload:EraEngine.Logger.Info
+  href: EraEngine.Logger.html#EraEngine_Logger_Info_System_String___
+  name: Info
+  nameWithType: Logger.Info
+  fullName: EraEngine.Logger.Info
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: EraEngine.Logger.Warn*
+  commentId: Overload:EraEngine.Logger.Warn
+  href: EraEngine.Logger.html#EraEngine_Logger_Warn_System_String___
+  name: Warn
+  nameWithType: Logger.Warn
+  fullName: EraEngine.Logger.Warn
+- uid: EraEngine.Logger.Error*
+  commentId: Overload:EraEngine.Logger.Error
+  href: EraEngine.Logger.html#EraEngine_Logger_Error_System_String___
+  name: Error
+  nameWithType: Logger.Error
+  fullName: EraEngine.Logger.Error
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
