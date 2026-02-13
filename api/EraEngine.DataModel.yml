@@ -16,12 +16,12 @@ items:
   type: Class
   source:
     remote:
-      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSignalsGenerator/EraEngine.DataModel_ScriptSignals.generated.cs
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertyDefValGenerator/EraEngine.DataModel_ScriptPropertyDefVal.generated.cs
       branch: demo/dev
       repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
     id: DataModel
-    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSignalsGenerator/EraEngine.DataModel_ScriptSignals.generated.cs
-    startLine: 5
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertyDefValGenerator/EraEngine.DataModel_ScriptPropertyDefVal.generated.cs
+    startLine: 2
   assemblies:
   - era-engine
   namespace: EraEngine

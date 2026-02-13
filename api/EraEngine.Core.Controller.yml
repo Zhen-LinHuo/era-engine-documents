@@ -19,12 +19,12 @@ items:
   type: Class
   source:
     remote:
-      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPathAttributeGenerator/EraEngine.Core.Controller_ScriptPath.generated.cs
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSerializationGenerator/EraEngine.Core.Controller_ScriptSerialization.generated.cs
       branch: demo/dev
       repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
     id: Controller
-    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPathAttributeGenerator/EraEngine.Core.Controller_ScriptPath.generated.cs
-    startLine: 3
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSerializationGenerator/EraEngine.Core.Controller_ScriptSerialization.generated.cs
+    startLine: 5
   assemblies:
   - era-engine
   namespace: EraEngine.Core

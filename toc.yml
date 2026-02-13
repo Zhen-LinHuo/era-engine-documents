@@ -1,4 +1,4 @@
 - name: Docs
-  href: Docs/toc.yml
+  href: docs/toc.yml
 - name: API
   href: api/

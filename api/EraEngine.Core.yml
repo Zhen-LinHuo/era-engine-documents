@@ -64,50 +64,6 @@ references:
   name: Controller
   nameWithType: Controller
   fullName: EraEngine.Core.Controller
-- uid: EraEngine.Core.Controller.SignalName
-  commentId: T:EraEngine.Core.Controller.SignalName
-  href: EraEngine.Core.Controller.html
-  name: Controller.SignalName
-  nameWithType: Controller.SignalName
-  fullName: EraEngine.Core.Controller.SignalName
-  spec.csharp:
-  - uid: EraEngine.Core.Controller
-    name: Controller
-    href: EraEngine.Core.Controller.html
-  - name: .
-  - uid: EraEngine.Core.Controller.SignalName
-    name: SignalName
-    href: EraEngine.Core.Controller.SignalName.html
-  spec.vb:
-  - uid: EraEngine.Core.Controller
-    name: Controller
-    href: EraEngine.Core.Controller.html
-  - name: .
-  - uid: EraEngine.Core.Controller.SignalName
-    name: SignalName
-    href: EraEngine.Core.Controller.SignalName.html
-- uid: EraEngine.Core.Controller.PropertyName
-  commentId: T:EraEngine.Core.Controller.PropertyName
-  href: EraEngine.Core.Controller.html
-  name: Controller.PropertyName
-  nameWithType: Controller.PropertyName
-  fullName: EraEngine.Core.Controller.PropertyName
-  spec.csharp:
-  - uid: EraEngine.Core.Controller
-    name: Controller
-    href: EraEngine.Core.Controller.html
-  - name: .
-  - uid: EraEngine.Core.Controller.PropertyName
-    name: PropertyName
-    href: EraEngine.Core.Controller.PropertyName.html
-  spec.vb:
-  - uid: EraEngine.Core.Controller
-    name: Controller
-    href: EraEngine.Core.Controller.html
-  - name: .
-  - uid: EraEngine.Core.Controller.PropertyName
-    name: PropertyName
-    href: EraEngine.Core.Controller.PropertyName.html
 - uid: EraEngine.Core.Controller.MethodName
   commentId: T:EraEngine.Core.Controller.MethodName
   href: EraEngine.Core.Controller.html
@@ -130,6 +86,50 @@ references:
   - uid: EraEngine.Core.Controller.MethodName
     name: MethodName
     href: EraEngine.Core.Controller.MethodName.html
+- uid: EraEngine.Core.Controller.PropertyName
+  commentId: T:EraEngine.Core.Controller.PropertyName
+  href: EraEngine.Core.Controller.html
+  name: Controller.PropertyName
+  nameWithType: Controller.PropertyName
+  fullName: EraEngine.Core.Controller.PropertyName
+  spec.csharp:
+  - uid: EraEngine.Core.Controller
+    name: Controller
+    href: EraEngine.Core.Controller.html
+  - name: .
+  - uid: EraEngine.Core.Controller.PropertyName
+    name: PropertyName
+    href: EraEngine.Core.Controller.PropertyName.html
+  spec.vb:
+  - uid: EraEngine.Core.Controller
+    name: Controller
+    href: EraEngine.Core.Controller.html
+  - name: .
+  - uid: EraEngine.Core.Controller.PropertyName
+    name: PropertyName
+    href: EraEngine.Core.Controller.PropertyName.html
+- uid: EraEngine.Core.Controller.SignalName
+  commentId: T:EraEngine.Core.Controller.SignalName
+  href: EraEngine.Core.Controller.html
+  name: Controller.SignalName
+  nameWithType: Controller.SignalName
+  fullName: EraEngine.Core.Controller.SignalName
+  spec.csharp:
+  - uid: EraEngine.Core.Controller
+    name: Controller
+    href: EraEngine.Core.Controller.html
+  - name: .
+  - uid: EraEngine.Core.Controller.SignalName
+    name: SignalName
+    href: EraEngine.Core.Controller.SignalName.html
+  spec.vb:
+  - uid: EraEngine.Core.Controller
+    name: Controller
+    href: EraEngine.Core.Controller.html
+  - name: .
+  - uid: EraEngine.Core.Controller.SignalName
+    name: SignalName
+    href: EraEngine.Core.Controller.SignalName.html
 - uid: EraEngine.Core.DataService
   commentId: T:EraEngine.Core.DataService
   parent: EraEngine.Core
@@ -137,6 +137,28 @@ references:
   name: DataService
   nameWithType: DataService
   fullName: EraEngine.Core.DataService
+- uid: EraEngine.Core.DataService.MethodName
+  commentId: T:EraEngine.Core.DataService.MethodName
+  href: EraEngine.Core.DataService.html
+  name: DataService.MethodName
+  nameWithType: DataService.MethodName
+  fullName: EraEngine.Core.DataService.MethodName
+  spec.csharp:
+  - uid: EraEngine.Core.DataService
+    name: DataService
+    href: EraEngine.Core.DataService.html
+  - name: .
+  - uid: EraEngine.Core.DataService.MethodName
+    name: MethodName
+    href: EraEngine.Core.DataService.MethodName.html
+  spec.vb:
+  - uid: EraEngine.Core.DataService
+    name: DataService
+    href: EraEngine.Core.DataService.html
+  - name: .
+  - uid: EraEngine.Core.DataService.MethodName
+    name: MethodName
+    href: EraEngine.Core.DataService.MethodName.html
 - uid: EraEngine.Core.DataService.PropertyName
   commentId: T:EraEngine.Core.DataService.PropertyName
   href: EraEngine.Core.DataService.html
@@ -181,28 +203,6 @@ references:
   - uid: EraEngine.Core.DataService.SignalName
     name: SignalName
     href: EraEngine.Core.DataService.SignalName.html
-- uid: EraEngine.Core.DataService.MethodName
-  commentId: T:EraEngine.Core.DataService.MethodName
-  href: EraEngine.Core.DataService.html
-  name: DataService.MethodName
-  nameWithType: DataService.MethodName
-  fullName: EraEngine.Core.DataService.MethodName
-  spec.csharp:
-  - uid: EraEngine.Core.DataService
-    name: DataService
-    href: EraEngine.Core.DataService.html
-  - name: .
-  - uid: EraEngine.Core.DataService.MethodName
-    name: MethodName
-    href: EraEngine.Core.DataService.MethodName.html
-  spec.vb:
-  - uid: EraEngine.Core.DataService
-    name: DataService
-    href: EraEngine.Core.DataService.html
-  - name: .
-  - uid: EraEngine.Core.DataService.MethodName
-    name: MethodName
-    href: EraEngine.Core.DataService.MethodName.html
 - uid: EraEngine.Core.FlowService
   commentId: T:EraEngine.Core.FlowService
   parent: EraEngine.Core
@@ -279,28 +279,6 @@ references:
   - uid: EraEngine.Core.FlowService.BoxCommandedEventHandler
     name: BoxCommandedEventHandler
     href: EraEngine.Core.FlowService.BoxCommandedEventHandler.html
-- uid: EraEngine.Core.FlowService.MethodName
-  commentId: T:EraEngine.Core.FlowService.MethodName
-  href: EraEngine.Core.FlowService.html
-  name: FlowService.MethodName
-  nameWithType: FlowService.MethodName
-  fullName: EraEngine.Core.FlowService.MethodName
-  spec.csharp:
-  - uid: EraEngine.Core.FlowService
-    name: FlowService
-    href: EraEngine.Core.FlowService.html
-  - name: .
-  - uid: EraEngine.Core.FlowService.MethodName
-    name: MethodName
-    href: EraEngine.Core.FlowService.MethodName.html
-  spec.vb:
-  - uid: EraEngine.Core.FlowService
-    name: FlowService
-    href: EraEngine.Core.FlowService.html
-  - name: .
-  - uid: EraEngine.Core.FlowService.MethodName
-    name: MethodName
-    href: EraEngine.Core.FlowService.MethodName.html
 - uid: EraEngine.Core.FlowService.PropertyName
   commentId: T:EraEngine.Core.FlowService.PropertyName
   href: EraEngine.Core.FlowService.html
@@ -345,6 +323,28 @@ references:
   - uid: EraEngine.Core.FlowService.SignalName
     name: SignalName
     href: EraEngine.Core.FlowService.SignalName.html
+- uid: EraEngine.Core.FlowService.MethodName
+  commentId: T:EraEngine.Core.FlowService.MethodName
+  href: EraEngine.Core.FlowService.html
+  name: FlowService.MethodName
+  nameWithType: FlowService.MethodName
+  fullName: EraEngine.Core.FlowService.MethodName
+  spec.csharp:
+  - uid: EraEngine.Core.FlowService
+    name: FlowService
+    href: EraEngine.Core.FlowService.html
+  - name: .
+  - uid: EraEngine.Core.FlowService.MethodName
+    name: MethodName
+    href: EraEngine.Core.FlowService.MethodName.html
+  spec.vb:
+  - uid: EraEngine.Core.FlowService
+    name: FlowService
+    href: EraEngine.Core.FlowService.html
+  - name: .
+  - uid: EraEngine.Core.FlowService.MethodName
+    name: MethodName
+    href: EraEngine.Core.FlowService.MethodName.html
 - uid: EraEngine.Core.ModelService
   commentId: T:EraEngine.Core.ModelService
   parent: EraEngine.Core
@@ -352,28 +352,6 @@ references:
   name: ModelService
   nameWithType: ModelService
   fullName: EraEngine.Core.ModelService
-- uid: EraEngine.Core.ModelService.SignalName
-  commentId: T:EraEngine.Core.ModelService.SignalName
-  href: EraEngine.Core.ModelService.html
-  name: ModelService.SignalName
-  nameWithType: ModelService.SignalName
-  fullName: EraEngine.Core.ModelService.SignalName
-  spec.csharp:
-  - uid: EraEngine.Core.ModelService
-    name: ModelService
-    href: EraEngine.Core.ModelService.html
-  - name: .
-  - uid: EraEngine.Core.ModelService.SignalName
-    name: SignalName
-    href: EraEngine.Core.ModelService.SignalName.html
-  spec.vb:
-  - uid: EraEngine.Core.ModelService
-    name: ModelService
-    href: EraEngine.Core.ModelService.html
-  - name: .
-  - uid: EraEngine.Core.ModelService.SignalName
-    name: SignalName
-    href: EraEngine.Core.ModelService.SignalName.html
 - uid: EraEngine.Core.ModelService.PropertyName
   commentId: T:EraEngine.Core.ModelService.PropertyName
   href: EraEngine.Core.ModelService.html
@@ -396,6 +374,28 @@ references:
   - uid: EraEngine.Core.ModelService.PropertyName
     name: PropertyName
     href: EraEngine.Core.ModelService.PropertyName.html
+- uid: EraEngine.Core.ModelService.SignalName
+  commentId: T:EraEngine.Core.ModelService.SignalName
+  href: EraEngine.Core.ModelService.html
+  name: ModelService.SignalName
+  nameWithType: ModelService.SignalName
+  fullName: EraEngine.Core.ModelService.SignalName
+  spec.csharp:
+  - uid: EraEngine.Core.ModelService
+    name: ModelService
+    href: EraEngine.Core.ModelService.html
+  - name: .
+  - uid: EraEngine.Core.ModelService.SignalName
+    name: SignalName
+    href: EraEngine.Core.ModelService.SignalName.html
+  spec.vb:
+  - uid: EraEngine.Core.ModelService
+    name: ModelService
+    href: EraEngine.Core.ModelService.html
+  - name: .
+  - uid: EraEngine.Core.ModelService.SignalName
+    name: SignalName
+    href: EraEngine.Core.ModelService.SignalName.html
 - uid: EraEngine.Core.ModelService.MethodName
   commentId: T:EraEngine.Core.ModelService.MethodName
   href: EraEngine.Core.ModelService.html
@@ -498,28 +498,6 @@ references:
   name: Model
   nameWithType: Model
   fullName: EraEngine.Core.Model
-- uid: EraEngine.Core.Model.SignalName
-  commentId: T:EraEngine.Core.Model.SignalName
-  href: EraEngine.Core.Model.html
-  name: Model.SignalName
-  nameWithType: Model.SignalName
-  fullName: EraEngine.Core.Model.SignalName
-  spec.csharp:
-  - uid: EraEngine.Core.Model
-    name: Model
-    href: EraEngine.Core.Model.html
-  - name: .
-  - uid: EraEngine.Core.Model.SignalName
-    name: SignalName
-    href: EraEngine.Core.Model.SignalName.html
-  spec.vb:
-  - uid: EraEngine.Core.Model
-    name: Model
-    href: EraEngine.Core.Model.html
-  - name: .
-  - uid: EraEngine.Core.Model.SignalName
-    name: SignalName
-    href: EraEngine.Core.Model.SignalName.html
 - uid: EraEngine.Core.Model.PropertyName
   commentId: T:EraEngine.Core.Model.PropertyName
   href: EraEngine.Core.Model.html
@@ -542,6 +520,28 @@ references:
   - uid: EraEngine.Core.Model.PropertyName
     name: PropertyName
     href: EraEngine.Core.Model.PropertyName.html
+- uid: EraEngine.Core.Model.SignalName
+  commentId: T:EraEngine.Core.Model.SignalName
+  href: EraEngine.Core.Model.html
+  name: Model.SignalName
+  nameWithType: Model.SignalName
+  fullName: EraEngine.Core.Model.SignalName
+  spec.csharp:
+  - uid: EraEngine.Core.Model
+    name: Model
+    href: EraEngine.Core.Model.html
+  - name: .
+  - uid: EraEngine.Core.Model.SignalName
+    name: SignalName
+    href: EraEngine.Core.Model.SignalName.html
+  spec.vb:
+  - uid: EraEngine.Core.Model
+    name: Model
+    href: EraEngine.Core.Model.html
+  - name: .
+  - uid: EraEngine.Core.Model.SignalName
+    name: SignalName
+    href: EraEngine.Core.Model.SignalName.html
 - uid: EraEngine.Core.Model.MethodName
   commentId: T:EraEngine.Core.Model.MethodName
   href: EraEngine.Core.Model.html
@@ -642,50 +642,6 @@ references:
   name: MainContent
   nameWithType: MainContent
   fullName: EraEngine.Core.MainContent
-- uid: EraEngine.Core.MainContent.MethodName
-  commentId: T:EraEngine.Core.MainContent.MethodName
-  href: EraEngine.Core.MainContent.html
-  name: MainContent.MethodName
-  nameWithType: MainContent.MethodName
-  fullName: EraEngine.Core.MainContent.MethodName
-  spec.csharp:
-  - uid: EraEngine.Core.MainContent
-    name: MainContent
-    href: EraEngine.Core.MainContent.html
-  - name: .
-  - uid: EraEngine.Core.MainContent.MethodName
-    name: MethodName
-    href: EraEngine.Core.MainContent.MethodName.html
-  spec.vb:
-  - uid: EraEngine.Core.MainContent
-    name: MainContent
-    href: EraEngine.Core.MainContent.html
-  - name: .
-  - uid: EraEngine.Core.MainContent.MethodName
-    name: MethodName
-    href: EraEngine.Core.MainContent.MethodName.html
-- uid: EraEngine.Core.MainContent.PropertyName
-  commentId: T:EraEngine.Core.MainContent.PropertyName
-  href: EraEngine.Core.MainContent.html
-  name: MainContent.PropertyName
-  nameWithType: MainContent.PropertyName
-  fullName: EraEngine.Core.MainContent.PropertyName
-  spec.csharp:
-  - uid: EraEngine.Core.MainContent
-    name: MainContent
-    href: EraEngine.Core.MainContent.html
-  - name: .
-  - uid: EraEngine.Core.MainContent.PropertyName
-    name: PropertyName
-    href: EraEngine.Core.MainContent.PropertyName.html
-  spec.vb:
-  - uid: EraEngine.Core.MainContent
-    name: MainContent
-    href: EraEngine.Core.MainContent.html
-  - name: .
-  - uid: EraEngine.Core.MainContent.PropertyName
-    name: PropertyName
-    href: EraEngine.Core.MainContent.PropertyName.html
 - uid: EraEngine.Core.MainContent.SignalName
   commentId: T:EraEngine.Core.MainContent.SignalName
   href: EraEngine.Core.MainContent.html
@@ -708,6 +664,50 @@ references:
   - uid: EraEngine.Core.MainContent.SignalName
     name: SignalName
     href: EraEngine.Core.MainContent.SignalName.html
+- uid: EraEngine.Core.MainContent.PropertyName
+  commentId: T:EraEngine.Core.MainContent.PropertyName
+  href: EraEngine.Core.MainContent.html
+  name: MainContent.PropertyName
+  nameWithType: MainContent.PropertyName
+  fullName: EraEngine.Core.MainContent.PropertyName
+  spec.csharp:
+  - uid: EraEngine.Core.MainContent
+    name: MainContent
+    href: EraEngine.Core.MainContent.html
+  - name: .
+  - uid: EraEngine.Core.MainContent.PropertyName
+    name: PropertyName
+    href: EraEngine.Core.MainContent.PropertyName.html
+  spec.vb:
+  - uid: EraEngine.Core.MainContent
+    name: MainContent
+    href: EraEngine.Core.MainContent.html
+  - name: .
+  - uid: EraEngine.Core.MainContent.PropertyName
+    name: PropertyName
+    href: EraEngine.Core.MainContent.PropertyName.html
+- uid: EraEngine.Core.MainContent.MethodName
+  commentId: T:EraEngine.Core.MainContent.MethodName
+  href: EraEngine.Core.MainContent.html
+  name: MainContent.MethodName
+  nameWithType: MainContent.MethodName
+  fullName: EraEngine.Core.MainContent.MethodName
+  spec.csharp:
+  - uid: EraEngine.Core.MainContent
+    name: MainContent
+    href: EraEngine.Core.MainContent.html
+  - name: .
+  - uid: EraEngine.Core.MainContent.MethodName
+    name: MethodName
+    href: EraEngine.Core.MainContent.MethodName.html
+  spec.vb:
+  - uid: EraEngine.Core.MainContent
+    name: MainContent
+    href: EraEngine.Core.MainContent.html
+  - name: .
+  - uid: EraEngine.Core.MainContent.MethodName
+    name: MethodName
+    href: EraEngine.Core.MainContent.MethodName.html
 - uid: EraEngine.Core.UnitContainer
   commentId: T:EraEngine.Core.UnitContainer
   parent: EraEngine.Core
@@ -715,29 +715,6 @@ references:
   name: UnitContainer
   nameWithType: UnitContainer
   fullName: EraEngine.Core.UnitContainer
-- uid: EraEngine.Core.UnitContainer.SignalName
-  commentId: T:EraEngine.Core.UnitContainer.SignalName
-  parent: EraEngine.Core
-  href: EraEngine.Core.UnitContainer.html
-  name: UnitContainer.SignalName
-  nameWithType: UnitContainer.SignalName
-  fullName: EraEngine.Core.UnitContainer.SignalName
-  spec.csharp:
-  - uid: EraEngine.Core.UnitContainer
-    name: UnitContainer
-    href: EraEngine.Core.UnitContainer.html
-  - name: .
-  - uid: EraEngine.Core.UnitContainer.SignalName
-    name: SignalName
-    href: EraEngine.Core.UnitContainer.SignalName.html
-  spec.vb:
-  - uid: EraEngine.Core.UnitContainer
-    name: UnitContainer
-    href: EraEngine.Core.UnitContainer.html
-  - name: .
-  - uid: EraEngine.Core.UnitContainer.SignalName
-    name: SignalName
-    href: EraEngine.Core.UnitContainer.SignalName.html
 - uid: EraEngine.Core.UnitContainer.MethodName
   commentId: T:EraEngine.Core.UnitContainer.MethodName
   parent: EraEngine.Core
@@ -761,6 +738,29 @@ references:
   - uid: EraEngine.Core.UnitContainer.MethodName
     name: MethodName
     href: EraEngine.Core.UnitContainer.MethodName.html
+- uid: EraEngine.Core.UnitContainer.SignalName
+  commentId: T:EraEngine.Core.UnitContainer.SignalName
+  parent: EraEngine.Core
+  href: EraEngine.Core.UnitContainer.html
+  name: UnitContainer.SignalName
+  nameWithType: UnitContainer.SignalName
+  fullName: EraEngine.Core.UnitContainer.SignalName
+  spec.csharp:
+  - uid: EraEngine.Core.UnitContainer
+    name: UnitContainer
+    href: EraEngine.Core.UnitContainer.html
+  - name: .
+  - uid: EraEngine.Core.UnitContainer.SignalName
+    name: SignalName
+    href: EraEngine.Core.UnitContainer.SignalName.html
+  spec.vb:
+  - uid: EraEngine.Core.UnitContainer
+    name: UnitContainer
+    href: EraEngine.Core.UnitContainer.html
+  - name: .
+  - uid: EraEngine.Core.UnitContainer.SignalName
+    name: SignalName
+    href: EraEngine.Core.UnitContainer.SignalName.html
 - uid: EraEngine.Core.UnitContainer.PropertyName
   commentId: T:EraEngine.Core.UnitContainer.PropertyName
   parent: EraEngine.Core
@@ -790,6 +790,28 @@ references:
   name: View
   nameWithType: View
   fullName: EraEngine.Core.View
+- uid: EraEngine.Core.View.MethodName
+  commentId: T:EraEngine.Core.View.MethodName
+  href: EraEngine.Core.View.html
+  name: View.MethodName
+  nameWithType: View.MethodName
+  fullName: EraEngine.Core.View.MethodName
+  spec.csharp:
+  - uid: EraEngine.Core.View
+    name: View
+    href: EraEngine.Core.View.html
+  - name: .
+  - uid: EraEngine.Core.View.MethodName
+    name: MethodName
+    href: EraEngine.Core.View.MethodName.html
+  spec.vb:
+  - uid: EraEngine.Core.View
+    name: View
+    href: EraEngine.Core.View.html
+  - name: .
+  - uid: EraEngine.Core.View.MethodName
+    name: MethodName
+    href: EraEngine.Core.View.MethodName.html
 - uid: EraEngine.Core.View.SignalName
   commentId: T:EraEngine.Core.View.SignalName
   href: EraEngine.Core.View.html
@@ -834,28 +856,6 @@ references:
   - uid: EraEngine.Core.View.PropertyName
     name: PropertyName
     href: EraEngine.Core.View.PropertyName.html
-- uid: EraEngine.Core.View.MethodName
-  commentId: T:EraEngine.Core.View.MethodName
-  href: EraEngine.Core.View.html
-  name: View.MethodName
-  nameWithType: View.MethodName
-  fullName: EraEngine.Core.View.MethodName
-  spec.csharp:
-  - uid: EraEngine.Core.View
-    name: View
-    href: EraEngine.Core.View.html
-  - name: .
-  - uid: EraEngine.Core.View.MethodName
-    name: MethodName
-    href: EraEngine.Core.View.MethodName.html
-  spec.vb:
-  - uid: EraEngine.Core.View
-    name: View
-    href: EraEngine.Core.View.html
-  - name: .
-  - uid: EraEngine.Core.View.MethodName
-    name: MethodName
-    href: EraEngine.Core.View.MethodName.html
 - uid: EraEngine.Core
   commentId: N:EraEngine.Core
   href: EraEngine.html
