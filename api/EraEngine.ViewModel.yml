@@ -14,12 +14,12 @@ items:
   type: Class
   source:
     remote:
-      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/EraEngine.ViewModel_ScriptMethods.generated.cs
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertyDefValGenerator/EraEngine.ViewModel_ScriptPropertyDefVal.generated.cs
       branch: demo/dev
       repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
     id: ViewModel
-    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/EraEngine.ViewModel_ScriptMethods.generated.cs
-    startLine: 5
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertyDefValGenerator/EraEngine.ViewModel_ScriptPropertyDefVal.generated.cs
+    startLine: 2
   assemblies:
   - era-engine
   namespace: EraEngine

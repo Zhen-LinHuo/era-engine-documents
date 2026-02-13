@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>设置状态 | ERA-Engine Document </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="设置状态 | ERA-Engine Document ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Zhen-LinHuo/ERA-Engine-Documents/blob/Develop/docs/Tutorial/SettingStates.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="ERA-Engine Document">
+            ERA-Engine Document
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="设置状态">设置状态</h1>
+
+<h2 id="概述">概述</h2>
+<p>在 <code>FSM 模式</code> 下，游戏本质上是状态 <code>state</code> 间的转移，因此显而易见的，制作游戏的主要工作便是各个状态的脚本。</p>
+<h2 id="创造你的第一个状态">创造你的第一个状态</h2>
+<ol>
+<li><p>创建并编辑 <code>main_state.gd</code></p>
+</li>
+<li><p>编写状态</p>
+<ul>
+<li><p>创建一个 <code>main_state</code> 函数，作为这个状态的入口：</p>
+<pre><code class="lang-gdscript">func main_state():
+     TXT(&quot;era靛紫档案&quot;)  # Create a text unit
+     BOX([   # Create a series of units, pack in a box
+         BTN(&quot;开始游戏&quot;, &quot;start_game&quot;),  # Create a button unit, and set corresponding next state name
+         BTN(&quot;读取存档&quot;, &quot;load_game&quot;)
+         ])
+</code></pre>
+<p>你可以使用 <code>BOX</code> 来包裹一组界面显示单元，并且用这种方式调整它们的布局。对于各个UI元素，诸如 <code>TXT</code>、<code>BTN</code>、<code>BOX</code> 等，参考API文档来查看更进一步的参数选项。</p>
+</li>
+<li><p>可以注意到的是，一个按钮 <code>BTN</code> 显然会带来状态的转换，因此在它声明时也指定了它被点击时应当转向的新状态的名字。</p>
+</li>
+</ul>
+</li>
+<li><p>下一个状态函数
+1.使用如下代码来设置下一个状态 (<code>start_game</code> 和 <code>load_game</code>):</p>
+<pre><code class="lang-gdscript">func start_game():
+    TXT(&quot;你喜欢什么样的主角？&quot;)
+    BTN(&quot;喜爱淑女的主角&quot;, &quot;select_char_0&quot;)
+    BTN(&quot;财大气粗的主角&quot;, &quot;select_char_1&quot;)
+    BTN(&quot;神父气质的主角&quot;, &quot;select_char_2&quot;)
+    BTN(&quot;流氓热血的主角&quot;, &quot;select_char_3&quot;)
+
+func load_game():
+    TXT(&quot;读取存档&quot;)
+    BTN(&quot;读取不了，返回&quot;, &quot;main_state&quot;)
+
+# Continue with select_char_0, select_char_1, select_char_2, select_char_3...
+</code></pre>
+<p>现在，你的 <code>main_state</code> 的按钮应该可以正常工作了。如果你希望继续完成编码工作，那么 <code>start_game</code> 部分声明了更多状态，你可以继续完善这些代码。
+2. 遵循这样的工作流程，你就可以逐步构建你的第一个游戏</p>
+</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Zhen-LinHuo/ERA-Engine-Documents/blob/Develop/docs/Tutorial/SettingStates.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

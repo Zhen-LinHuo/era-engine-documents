@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>ERA-Engine (Godot) 的设计 | ERA-Engine Document </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="ERA-Engine (Godot) 的设计 | ERA-Engine Document ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Zhen-LinHuo/ERA-Engine-Documents/blob/Develop/docs/Introduction/Design.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="ERA-Engine Document">
+            ERA-Engine Document
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="era-engine-godot-的设计">ERA-Engine (Godot) 的设计</h1>
+
+<h2 id="设计原则">设计原则</h2>
+<h3 id="有限状态机-fsm">有限状态机 (FSM)</h3>
+<p>有限状态机 (Finite State Machine, FSM) 是一个由有限数量的状态组成的系统，<strong>通过在不同状态之间转换来运行</strong>。这是一个用于设计计算机程序和顺序逻辑过程的计算模型。</p>
+<p>在这样的模型 (或者说程序) 中，所有的数据、状态和其他信息都被称之为<strong>状态 (<code>state</code>)</strong>，在任何一个给定的时刻，系统总是只有有限个可能的状态——这也是这一架构被称为有限状态机的原因。</p>
+<p><img src="../../Images/FSM.svg" alt="有限状态机的示意图"></p>
+<p>ERA-Engine (Godot) 将 FSM 模式植入系统，为 ERA 和 类ERA 游戏提供了全新的编程模式: <code>FSM 模式</code>。</p>
+<p>在 ERA-Engine 中，任何状态信息 (如界面的布局和显示内容，角色的状态等) 被抽象为状态 <code>state</code>, 状态间的转换则可称为转置 <code>transition</code>: UI的变换 (如某个特定按钮的消失或出现、页面的切换等)，游戏进度的推进，诸如此类。因此，事实上，就如有限状态机所说的，在这一模式下，游戏本身的处理和推进本质上也可理解为不同状态 <code>state</code> 之间的切换。</p>
+<h3 id="mvc-模式">MVC 模式</h3>
+<p>模型-视图-控制器 (Model-View-Controller, MVC) 是一种设计模式，用于将应用程序分为三个主要部分：模型、视图和控制器。</p>
+<p><img src="../../Images/MVC.svg" alt="MVC 模式中三者相互关系的示意图"></p>
+<p>通俗而言，视图 <code>view</code> 是用户所见的内容，模型 <code>model</code> 是用户所操作的数据，控制器 <code>controller</code> 则是用户和视图、模型之间的桥梁，程序运行的逻辑。在视图 <code>view</code> 更新时，控制器 <code>controller</code> 会执行主要逻辑和处理，在模型 <code>model</code> 中查询和更新数据，并且将之返回给视图 <code>view</code>，从而使用户看到操作或变化的结果。</p>
+<p>通过这样的流程，程序可以被拆分为三个模块，从而帮助作者厘清思路，令代码结构更模块化，代码和程序更加稳定可靠。</p>
+<h2 id="系统架构">系统架构</h2>
+<h3 id="概览">概览</h3>
+<p>总得来说，在 ERA-Engine (Godot) 中创作游戏，你需要关注一下两个主要的部分：</p>
+<ul>
+<li><code>状态 (State)</code>: 界面的布置和内容，角色物品等的状态</li>
+<li><code>数据 (Data)</code>: 所有的数据文件，包括角色<code>character</code>、口上<code>kojo</code>、物品<code>item</code>等</li>
+</ul>
+<p>随后，基于这二者，你可以自由组织不同状态下界面显示单元<code>UI Unit</code>的排布，以及基于有限状态机的计算、转换，进而构成整个游戏的运行逻辑。</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>想要快速开始？看看<a href="../Tutorial/SettingStates.html"><strong>入门教程</strong></a>吧！</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Zhen-LinHuo/ERA-Engine-Documents/blob/Develop/docs/Introduction/Design.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

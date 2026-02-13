@@ -24,12 +24,12 @@ items:
   type: Class
   source:
     remote:
-      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertyDefValGenerator/EraEngine.Core.ModelService_ScriptPropertyDefVal.generated.cs
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/EraEngine.Core.ModelService_ScriptMethods.generated.cs
       branch: demo/dev
       repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
     id: ModelService
-    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertyDefValGenerator/EraEngine.Core.ModelService_ScriptPropertyDefVal.generated.cs
-    startLine: 2
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/EraEngine.Core.ModelService_ScriptMethods.generated.cs
+    startLine: 5
   assemblies:
   - era-engine
   namespace: EraEngine.Core

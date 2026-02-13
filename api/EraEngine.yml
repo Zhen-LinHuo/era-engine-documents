@@ -59,6 +59,28 @@ references:
   - uid: EraEngine.ViewService.ButtonExecutedEventHandler
     name: ButtonExecutedEventHandler
     href: EraEngine.ViewService.ButtonExecutedEventHandler.html
+- uid: EraEngine.ViewService.PropertyName
+  commentId: T:EraEngine.ViewService.PropertyName
+  href: EraEngine.ViewService.html
+  name: ViewService.PropertyName
+  nameWithType: ViewService.PropertyName
+  fullName: EraEngine.ViewService.PropertyName
+  spec.csharp:
+  - uid: EraEngine.ViewService
+    name: ViewService
+    href: EraEngine.ViewService.html
+  - name: .
+  - uid: EraEngine.ViewService.PropertyName
+    name: PropertyName
+    href: EraEngine.ViewService.PropertyName.html
+  spec.vb:
+  - uid: EraEngine.ViewService
+    name: ViewService
+    href: EraEngine.ViewService.html
+  - name: .
+  - uid: EraEngine.ViewService.PropertyName
+    name: PropertyName
+    href: EraEngine.ViewService.PropertyName.html
 - uid: EraEngine.ViewService.SignalName
   commentId: T:EraEngine.ViewService.SignalName
   href: EraEngine.ViewService.html
@@ -103,28 +125,6 @@ references:
   - uid: EraEngine.ViewService.MethodName
     name: MethodName
     href: EraEngine.ViewService.MethodName.html
-- uid: EraEngine.ViewService.PropertyName
-  commentId: T:EraEngine.ViewService.PropertyName
-  href: EraEngine.ViewService.html
-  name: ViewService.PropertyName
-  nameWithType: ViewService.PropertyName
-  fullName: EraEngine.ViewService.PropertyName
-  spec.csharp:
-  - uid: EraEngine.ViewService
-    name: ViewService
-    href: EraEngine.ViewService.html
-  - name: .
-  - uid: EraEngine.ViewService.PropertyName
-    name: PropertyName
-    href: EraEngine.ViewService.PropertyName.html
-  spec.vb:
-  - uid: EraEngine.ViewService
-    name: ViewService
-    href: EraEngine.ViewService.html
-  - name: .
-  - uid: EraEngine.ViewService.PropertyName
-    name: PropertyName
-    href: EraEngine.ViewService.PropertyName.html
 - uid: EraEngine.DataModel
   commentId: T:EraEngine.DataModel
   parent: EraEngine
@@ -154,28 +154,6 @@ references:
   - uid: EraEngine.DataModel.MethodName
     name: MethodName
     href: EraEngine.DataModel.MethodName.html
-- uid: EraEngine.DataModel.SignalName
-  commentId: T:EraEngine.DataModel.SignalName
-  href: EraEngine.DataModel.html
-  name: DataModel.SignalName
-  nameWithType: DataModel.SignalName
-  fullName: EraEngine.DataModel.SignalName
-  spec.csharp:
-  - uid: EraEngine.DataModel
-    name: DataModel
-    href: EraEngine.DataModel.html
-  - name: .
-  - uid: EraEngine.DataModel.SignalName
-    name: SignalName
-    href: EraEngine.DataModel.SignalName.html
-  spec.vb:
-  - uid: EraEngine.DataModel
-    name: DataModel
-    href: EraEngine.DataModel.html
-  - name: .
-  - uid: EraEngine.DataModel.SignalName
-    name: SignalName
-    href: EraEngine.DataModel.SignalName.html
 - uid: EraEngine.DataModel.PropertyName
   commentId: T:EraEngine.DataModel.PropertyName
   href: EraEngine.DataModel.html
@@ -198,12 +176,56 @@ references:
   - uid: EraEngine.DataModel.PropertyName
     name: PropertyName
     href: EraEngine.DataModel.PropertyName.html
+- uid: EraEngine.DataModel.SignalName
+  commentId: T:EraEngine.DataModel.SignalName
+  href: EraEngine.DataModel.html
+  name: DataModel.SignalName
+  nameWithType: DataModel.SignalName
+  fullName: EraEngine.DataModel.SignalName
+  spec.csharp:
+  - uid: EraEngine.DataModel
+    name: DataModel
+    href: EraEngine.DataModel.html
+  - name: .
+  - uid: EraEngine.DataModel.SignalName
+    name: SignalName
+    href: EraEngine.DataModel.SignalName.html
+  spec.vb:
+  - uid: EraEngine.DataModel
+    name: DataModel
+    href: EraEngine.DataModel.html
+  - name: .
+  - uid: EraEngine.DataModel.SignalName
+    name: SignalName
+    href: EraEngine.DataModel.SignalName.html
 - uid: EraEngine.ViewModel
   commentId: T:EraEngine.ViewModel
   href: EraEngine.ViewModel.html
   name: ViewModel
   nameWithType: ViewModel
   fullName: EraEngine.ViewModel
+- uid: EraEngine.ViewModel.MethodName
+  commentId: T:EraEngine.ViewModel.MethodName
+  href: EraEngine.ViewModel.html
+  name: ViewModel.MethodName
+  nameWithType: ViewModel.MethodName
+  fullName: EraEngine.ViewModel.MethodName
+  spec.csharp:
+  - uid: EraEngine.ViewModel
+    name: ViewModel
+    href: EraEngine.ViewModel.html
+  - name: .
+  - uid: EraEngine.ViewModel.MethodName
+    name: MethodName
+    href: EraEngine.ViewModel.MethodName.html
+  spec.vb:
+  - uid: EraEngine.ViewModel
+    name: ViewModel
+    href: EraEngine.ViewModel.html
+  - name: .
+  - uid: EraEngine.ViewModel.MethodName
+    name: MethodName
+    href: EraEngine.ViewModel.MethodName.html
 - uid: EraEngine.ViewModel.PropertyName
   commentId: T:EraEngine.ViewModel.PropertyName
   href: EraEngine.ViewModel.html
@@ -248,28 +270,6 @@ references:
   - uid: EraEngine.ViewModel.SignalName
     name: SignalName
     href: EraEngine.ViewModel.SignalName.html
-- uid: EraEngine.ViewModel.MethodName
-  commentId: T:EraEngine.ViewModel.MethodName
-  href: EraEngine.ViewModel.html
-  name: ViewModel.MethodName
-  nameWithType: ViewModel.MethodName
-  fullName: EraEngine.ViewModel.MethodName
-  spec.csharp:
-  - uid: EraEngine.ViewModel
-    name: ViewModel
-    href: EraEngine.ViewModel.html
-  - name: .
-  - uid: EraEngine.ViewModel.MethodName
-    name: MethodName
-    href: EraEngine.ViewModel.MethodName.html
-  spec.vb:
-  - uid: EraEngine.ViewModel
-    name: ViewModel
-    href: EraEngine.ViewModel.html
-  - name: .
-  - uid: EraEngine.ViewModel.MethodName
-    name: MethodName
-    href: EraEngine.ViewModel.MethodName.html
 - uid: EraEngine.Logger
   commentId: T:EraEngine.Logger
   href: EraEngine.Logger.html

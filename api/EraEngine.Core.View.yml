@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.Core.View_ScriptProperties.generated.cs
+      path: .godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSignalsGenerator/EraEngine.Core.View_ScriptSignals.generated.cs
       branch: demo/dev
       repo: https://Zhen-LinHuo@github.com/Zhen-LinHuo/ERA-Engine.git
     id: View
-    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptPropertiesGenerator/EraEngine.Core.View_ScriptProperties.generated.cs
+    path: ../ERA-Engine/.godot/mono/temp/obj/Release/Godot.SourceGenerators/Godot.SourceGenerators.ScriptSignalsGenerator/EraEngine.Core.View_ScriptSignals.generated.cs
     startLine: 5
   assemblies:
   - era-engine
