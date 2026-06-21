@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .text-title { fill: #0f172a; font-family: sans-serif; font-size: 16; font-weight: bold; }
+      .text-label { fill: #0f172a; font-family: sans-serif; font-size: 13; font-weight: bold; }
+      .text-sublabel { fill: #475569; font-family: sans-serif; font-size: 11; }
+      .text-anno { fill: #64748b; font-family: sans-serif; font-size: 10; }
+      .box-cyan-fill { fill: #ecfeff; }
+      .box-cyan-stroke { stroke: #0891b2; stroke-width: 1.5; }
+      .text-cyan { fill: #0e7490; }
+      .box-emerald-fill { fill: #ecfdf5; }
+      .box-emerald-stroke { stroke: #059669; stroke-width: 1.5; }
+      .text-emerald { fill: #047857; }
+      .box-violet-fill { fill: #f5f3ff; }
+      .box-violet-stroke { stroke: #7c3aed; stroke-width: 1.5; }
+      .text-violet { fill: #6d28d9; }
+      .tree-line { fill: none; stroke: #94a3b8; stroke-width: 1.5; }
+      .tree-arrow { fill: none; stroke: #94a3b8; stroke-width: 1.5; marker-end: url(#arrow); }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #0f172a; }
+        .text-title { fill: #e2e8f0; }
+        .text-label { fill: #e2e8f0; }
+        .text-sublabel { fill: #94a3b8; }
+        .text-anno { fill: #64748b; }
+        .box-cyan-fill { fill: rgba(8,51,68,0.4); }
+        .box-cyan-stroke { stroke: #22d3ee; }
+        .text-cyan { fill: #22d3ee; }
+        .box-emerald-fill { fill: rgba(6,78,59,0.4); }
+        .box-emerald-stroke { stroke: #34d399; }
+        .text-emerald { fill: #34d399; }
+        .box-violet-fill { fill: rgba(76,29,149,0.4); }
+        .box-violet-stroke { stroke: #a78bfa; }
+        .text-violet { fill: #c4b5fd; }
+        .tree-line { stroke: #64748b; }
+        .tree-arrow { stroke: #64748b; }
+      }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" class="bg" rx="8"/>
+  <text x="350" y="28" text-anchor="middle" class="text-title">ViewService Factory Pattern</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Layer 1: ViewService (Factory)           -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="250" y="45" width="200" height="42" rx="8" class="box-cyan-fill box-cyan-stroke"/>
+  <text x="350" y="62" text-anchor="middle" class="text-label text-cyan">ViewService</text>
+  <text x="350" y="80" text-anchor="middle" class="text-sublabel">UI Factory</text>
+
+  <!-- ViewService → 3 templates: T-branch (centers 132, 350, 568) -->
+  <line x1="350" y1="87" x2="350" y2="99" class="tree-line"/>
+  <line x1="132" y1="99" x2="568" y2="99" class="tree-line"/>
+  <line x1="132" y1="99" x2="132" y2="135" class="tree-arrow"/>
+  <line x1="350" y1="99" x2="350" y2="135" class="tree-arrow"/>
+  <line x1="568" y1="99" x2="568" y2="135" class="tree-arrow"/>
+
+  <!-- Command annotations centered on each arrow -->
+  <text x="132" y="91" text-anchor="middle" class="text-anno">OnTextCmd</text>
+  <text x="132" y="122" text-anchor="middle" class="text-anno">OnButtonCmd</text>
+  <text x="350" y="122" text-anchor="middle" class="text-anno">OnSuiteCmd</text>
+  <text x="568" y="91" text-anchor="middle" class="text-anno">OnBoxCmd</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Layer 2: Template Models (w=170 each)    -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="47" y="135" width="170" height="46" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="132" y="155" text-anchor="middle" class="text-label text-emerald">Unit Models</text>
+  <text x="132" y="174" text-anchor="middle" class="text-sublabel">TextUnit / ButtonUnit</text>
+
+  <rect x="265" y="135" width="170" height="46" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="350" y="158" text-anchor="middle" class="text-label text-emerald">Suite Models</text>
+
+  <rect x="483" y="135" width="170" height="46" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="568" y="155" text-anchor="middle" class="text-label text-emerald">Box Models</text>
+  <text x="568" y="174" text-anchor="middle" class="text-sublabel">HBox / VBox</text>
+
+  <!-- Templates → MainContent: T-branch -->
+  <line x1="132" y1="181" x2="132" y2="193" class="tree-line"/>
+  <line x1="350" y1="181" x2="350" y2="193" class="tree-line"/>
+  <line x1="568" y1="181" x2="568" y2="193" class="tree-line"/>
+  <line x1="132" y1="193" x2="568" y2="193" class="tree-line"/>
+  <line x1="350" y1="193" x2="350" y2="220" class="tree-arrow"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Layer 3: MainContent (Output)            -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="130" y="220" width="440" height="46" rx="8" class="box-violet-fill box-violet-stroke"/>
+  <text x="350" y="240" text-anchor="middle" class="text-label text-violet">MainContent (ScrollContainer)</text>
+  <text x="350" y="258" text-anchor="middle" class="text-sublabel">Output area — duplicated UI instances assembled here</text>
+
+  <!-- Factory flow annotation -->
+  <text x="350" y="295" text-anchor="middle" class="text-anno">UnitFactory(uid) → Duplicate() → AddChild to MainContent</text>
+</svg>

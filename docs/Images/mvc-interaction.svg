@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 310" width="760" height="310">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .text-title { fill: #0f172a; font-family: sans-serif; font-size: 16; font-weight: bold; }
+      .text-label { fill: #0f172a; font-family: sans-serif; font-size: 13; font-weight: bold; }
+      .text-sublabel { fill: #475569; font-family: sans-serif; font-size: 11; }
+      .text-anno { fill: #64748b; font-family: sans-serif; font-size: 10; }
+      .box-cyan-fill { fill: #ecfeff; }
+      .box-cyan-stroke { stroke: #0891b2; stroke-width: 1.5; }
+      .text-cyan { fill: #0e7490; }
+      .box-emerald-fill { fill: #ecfdf5; }
+      .box-emerald-stroke { stroke: #059669; stroke-width: 1.5; }
+      .text-emerald { fill: #047857; }
+      .box-violet-fill { fill: #f5f3ff; }
+      .box-violet-stroke { stroke: #7c3aed; stroke-width: 1.5; }
+      .text-violet { fill: #6d28d9; }
+      .box-rose-fill { fill: #fff1f2; }
+      .box-rose-stroke { stroke: #be185d; stroke-width: 1.5; }
+      .text-rose { fill: #9d174d; }
+      .box-amber-fill { fill: #fffbeb; }
+      .box-amber-stroke { stroke: #d97706; stroke-width: 1.5; }
+      .text-amber { fill: #b45309; }
+      .box-slate-fill { fill: #f1f5f9; }
+      .box-slate-stroke { stroke: #64748b; stroke-width: 1.5; }
+      .text-slate { fill: #475569; }
+      .arrow { fill: none; stroke: #94a3b8; stroke-width: 1.5; marker-end: url(#arrow); }
+      .arrow-cyan { fill: none; stroke: #0891b2; stroke-width: 1.5; marker-end: url(#arrow-cyan); }
+      .arrow-emerald { fill: none; stroke: #059669; stroke-width: 1.5; marker-end: url(#arrow-emerald); }
+      .arrow-rose { fill: none; stroke: #be185d; stroke-width: 1.5; marker-end: url(#arrow-rose); }
+      .arrow-violet { fill: none; stroke: #7c3aed; stroke-width: 1.5; stroke-dasharray: 5 3; marker-end: url(#arrow-violet); }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #0f172a; }
+        .text-title { fill: #e2e8f0; }
+        .text-label { fill: #e2e8f0; }
+        .text-sublabel { fill: #94a3b8; }
+        .text-anno { fill: #64748b; }
+        .box-cyan-fill { fill: rgba(8,51,68,0.4); }
+        .box-cyan-stroke { stroke: #22d3ee; }
+        .text-cyan { fill: #22d3ee; }
+        .box-emerald-fill { fill: rgba(6,78,59,0.4); }
+        .box-emerald-stroke { stroke: #34d399; }
+        .text-emerald { fill: #34d399; }
+        .box-violet-fill { fill: rgba(76,29,149,0.4); }
+        .box-violet-stroke { stroke: #a78bfa; }
+        .text-violet { fill: #a78bfa; }
+        .box-rose-fill { fill: rgba(136,19,55,0.4); }
+        .box-rose-stroke { stroke: #fb7185; }
+        .text-rose { fill: #fb7185; }
+        .box-amber-fill { fill: rgba(120,53,15,0.3); }
+        .box-amber-stroke { stroke: #fbbf24; }
+        .text-amber { fill: #fbbf24; }
+        .box-slate-fill { fill: rgba(30,41,59,0.5); }
+        .box-slate-stroke { stroke: #94a3b8; }
+        .text-slate { fill: #94a3b8; }
+        .arrow { stroke: #64748b; }
+        .arrow-cyan { stroke: #22d3ee; }
+        .arrow-emerald { stroke: #34d399; }
+        .arrow-rose { stroke: #fb7185; }
+        .arrow-violet { stroke: #a78bfa; }
+      }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#0891b2"/>
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#059669"/>
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#be185d"/>
+    </marker>
+    <marker id="arrow-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" class="bg" rx="8"/>
+  <text x="380" y="30" text-anchor="middle" class="text-title">MVC Interaction Flow</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Row 1: Player Action (centered)         -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="280" y="55" width="200" height="48" rx="8" class="box-rose-fill box-rose-stroke"/>
+  <text x="380" y="74" text-anchor="middle" class="text-label text-rose">Player clicks</text>
+  <text x="380" y="95" text-anchor="middle" class="text-sublabel">"Drink Potion"</text>
+
+  <!-- ↓ Player → Controller -->
+  <line x1="380" y1="103" x2="380" y2="130" class="arrow-rose"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Row 2: Controller (centered)             -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="280" y="130" width="200" height="48" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="380" y="149" text-anchor="middle" class="text-label text-emerald">Controller</text>
+  <text x="380" y="170" text-anchor="middle" class="text-sublabel">handles event</text>
+
+  <!-- Controller → Model (↙) -->
+  <path d="M 330 178 Q 250 210 185 245" class="arrow" fill="none"/>
+  <text x="248" y="208" text-anchor="middle" class="text-anno">update data</text>
+
+  <!-- Controller → View (↘) -->
+  <path d="M 430 178 Q 510 210 575 245" class="arrow-cyan" fill="none"/>
+  <text x="512" y="208" text-anchor="middle" class="text-anno">refresh UI</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Row 3: Model (left) + View (right)       -->
+  <!-- ════════════════════════════════════════ -->
+  <!-- Model -->
+  <rect x="100" y="245" width="170" height="45" rx="8" class="box-violet-fill box-violet-stroke"/>
+  <text x="185" y="265" text-anchor="middle" class="text-label text-violet">Model</text>
+  <text x="185" y="282" text-anchor="middle" class="text-sublabel">stamina += 30</text>
+
+  <!-- View -->
+  <rect x="490" y="245" width="170" height="45" rx="8" class="box-cyan-fill box-cyan-stroke"/>
+  <text x="575" y="265" text-anchor="middle" class="text-label text-cyan">View</text>
+  <text x="575" y="282" text-anchor="middle" class="text-sublabel">TXT/BTN rerender</text>
+
+  <!-- Model → View (signal notification) -->
+  <line x1="270" y1="268" x2="490" y2="268" class="arrow-violet"/>
+  <text x="380" y="260" text-anchor="middle" class="text-anno">signal: data changed → rerender</text>
+</svg>

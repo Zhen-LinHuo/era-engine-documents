@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 260" width="680" height="260">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .text-title { fill: #0f172a; font-family: sans-serif; font-size: 16; font-weight: bold; }
+      .text-label { fill: #0f172a; font-family: sans-serif; font-size: 13; font-weight: bold; }
+      .text-sublabel { fill: #475569; font-family: sans-serif; font-size: 11; }
+      .box-violet-fill { fill: #f5f3ff; }
+      .box-violet-stroke { stroke: #7c3aed; stroke-width: 1.5; }
+      .text-violet { fill: #6d28d9; }
+      .box-emerald-fill { fill: #ecfdf5; }
+      .box-emerald-stroke { stroke: #059669; stroke-width: 1.5; }
+      .text-emerald { fill: #047857; }
+      .box-cyan-fill { fill: #ecfeff; }
+      .box-cyan-stroke { stroke: #0891b2; stroke-width: 1.5; }
+      .text-cyan { fill: #0e7490; }
+      .arrow { fill: none; stroke: #94a3b8; stroke-width: 1.5; marker-end: url(#arrow); }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #0f172a; }
+        .text-title { fill: #e2e8f0; }
+        .text-label { fill: #e2e8f0; }
+        .text-sublabel { fill: #94a3b8; }
+        .box-violet-fill { fill: rgba(76,29,149,0.4); }
+        .box-violet-stroke { stroke: #a78bfa; }
+        .text-violet { fill: #c4b5fd; }
+        .box-emerald-fill { fill: rgba(6,78,59,0.4); }
+        .box-emerald-stroke { stroke: #34d399; }
+        .text-emerald { fill: #34d399; }
+        .box-cyan-fill { fill: rgba(8,51,68,0.4); }
+        .box-cyan-stroke { stroke: #22d3ee; }
+        .text-cyan { fill: #22d3ee; }
+        .arrow { stroke: #64748b; }
+      }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" class="bg" rx="8"/>
+  <text x="340" y="28" text-anchor="middle" class="text-title">Save File Structure</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Save Slot (centered at 340)              -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="240" y="45" width="200" height="38" rx="8" class="box-violet-fill box-violet-stroke"/>
+  <text x="340" y="69" text-anchor="middle" class="text-label text-violet">Save Slot</text>
+
+  <!-- Balanced branch arrows -->
+  <path d="M 280 83 L 120 120" class="arrow" fill="none"/>
+  <line x1="340" y1="83" x2="340" y2="120" class="arrow"/>
+  <path d="M 400 83 L 560 120" class="arrow" fill="none"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Bottom: 3 file containers (w=180)       -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="30" y="120" width="180" height="55" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="120" y="140" text-anchor="middle" class="text-label text-emerald">model.tres</text>
+  <text x="120" y="162" text-anchor="middle" class="text-sublabel">Serialized Resources</text>
+
+  <rect x="250" y="120" width="180" height="55" rx="8" class="box-cyan-fill box-cyan-stroke"/>
+  <text x="340" y="140" text-anchor="middle" class="text-label text-cyan">meta.json</text>
+  <text x="340" y="162" text-anchor="middle" class="text-sublabel">Version / Timestamp</text>
+
+  <rect x="470" y="120" width="180" height="55" rx="8" class="box-cyan-fill box-cyan-stroke"/>
+  <text x="560" y="140" text-anchor="middle" class="text-label text-cyan">state.json</text>
+  <text x="560" y="162" text-anchor="middle" class="text-sublabel">Current FSM state</text>
+</svg>

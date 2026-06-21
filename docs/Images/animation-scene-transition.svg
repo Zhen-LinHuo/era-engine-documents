@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 85" width="540" height="85">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .text-title { fill: #0f172a; font-family: sans-serif; font-size: 16; font-weight: bold; }
+      .text-label { fill: #0f172a; font-family: sans-serif; font-size: 13; font-weight: bold; }
+      .text-sublabel { fill: #475569; font-family: sans-serif; font-size: 11; }
+      .text-anno { fill: #64748b; font-family: sans-serif; font-size: 10; }
+      .box-cyan-fill { fill: #ecfeff; }
+      .box-cyan-stroke { stroke: #0891b2; stroke-width: 1.5; }
+      .text-cyan { fill: #0e7490; }
+      .box-emerald-fill { fill: #ecfdf5; }
+      .box-emerald-stroke { stroke: #059669; stroke-width: 1.5; }
+      .text-emerald { fill: #047857; }
+      .box-violet-fill { fill: #f5f3ff; }
+      .box-violet-stroke { stroke: #7c3aed; stroke-width: 1.5; }
+      .text-violet { fill: #6d28d9; }
+      .box-rose-fill { fill: #fff1f2; }
+      .box-rose-stroke { stroke: #be185d; stroke-width: 1.5; }
+      .text-rose { fill: #9d174d; }
+      .box-amber-fill { fill: #fffbeb; }
+      .box-amber-stroke { stroke: #d97706; stroke-width: 1.5; }
+      .text-amber { fill: #b45309; }
+      .box-slate-fill { fill: #f1f5f9; }
+      .box-slate-stroke { stroke: #64748b; stroke-width: 1.5; }
+      .text-slate { fill: #475569; }
+      .arrow { fill: none; stroke: #94a3b8; stroke-width: 1.5; marker-end: url(#arrow); }
+      .arrow-cyan { fill: none; stroke: #0891b2; stroke-width: 1.5; marker-end: url(#arrow-cyan); }
+      .arrow-emerald { fill: none; stroke: #059669; stroke-width: 1.5; marker-end: url(#arrow-emerald); }
+      .arrow-rose { fill: none; stroke: #be185d; stroke-width: 1.5; marker-end: url(#arrow); }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #0f172a; }
+        .text-title { fill: #e2e8f0; }
+        .text-label { fill: #e2e8f0; }
+        .text-sublabel { fill: #94a3b8; }
+        .text-anno { fill: #64748b; }
+        .box-cyan-fill { fill: rgba(8,51,68,0.4); }
+        .box-cyan-stroke { stroke: #22d3ee; }
+        .text-cyan { fill: #22d3ee; }
+        .box-emerald-fill { fill: rgba(6,78,59,0.4); }
+        .box-emerald-stroke { stroke: #34d399; }
+        .text-emerald { fill: #34d399; }
+        .box-violet-fill { fill: rgba(76,29,149,0.4); }
+        .box-violet-stroke { stroke: #a78bfa; }
+        .text-violet { fill: #a78bfa; }
+        .box-rose-fill { fill: rgba(136,19,55,0.4); }
+        .box-rose-stroke { stroke: #fb7185; }
+        .text-rose { fill: #fb7185; }
+        .box-amber-fill { fill: rgba(120,53,15,0.3); }
+        .box-amber-stroke { stroke: #fbbf24; }
+        .text-amber { fill: #fbbf24; }
+        .box-slate-fill { fill: rgba(30,41,59,0.5); }
+        .box-slate-stroke { stroke: #94a3b8; }
+        .text-slate { fill: #94a3b8; }
+        .arrow { stroke: #64748b; }
+        .arrow-cyan { stroke: #22d3ee; }
+        .arrow-emerald { stroke: #34d399; }
+        .arrow-rose { stroke: #fb7185; }
+      }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#0891b2"/>
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#059669"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" class="bg" rx="8"/>
+
+  <rect x="20" y="22" width="150" height="40" rx="8" class="box-cyan-fill box-cyan-stroke"/>
+  <text x="95" y="37" text-anchor="middle" class="text-label text-cyan">Scene A</text>
+  <rect x="195" y="22" width="150" height="40" rx="8" class="box-slate-fill box-slate-stroke"/>
+  <text x="270" y="37" text-anchor="middle" class="text-label text-slate">[ Load ]</text>
+  <rect x="370" y="22" width="150" height="40" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="445" y="37" text-anchor="middle" class="text-label text-emerald">Scene B</text>
+  <line x1="170" y1="42" x2="195" y2="42" class="arrow-rose"/>
+  <text x="182" y="34" text-anchor="middle" class="text-anno">fade_out</text>
+  <line x1="345" y1="42" x2="370" y2="42" class="arrow-cyan"/>
+  <text x="357" y="34" text-anchor="middle" class="text-anno">fade_in</text>
+</svg>

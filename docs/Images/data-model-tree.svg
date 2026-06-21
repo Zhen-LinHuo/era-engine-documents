@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310" width="560" height="310">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .text-title { fill: #0f172a; font-family: sans-serif; font-size: 16; font-weight: bold; }
+      .text-label { fill: #0f172a; font-family: sans-serif; font-size: 13; font-weight: bold; }
+      .text-sublabel { fill: #475569; font-family: sans-serif; font-size: 11; }
+      .text-anno { fill: #64748b; font-family: sans-serif; font-size: 10; }
+      .box-violet-fill { fill: #f5f3ff; }
+      .box-violet-stroke { stroke: #7c3aed; stroke-width: 1.5; }
+      .text-violet { fill: #6d28d9; }
+      .box-emerald-fill { fill: #ecfdf5; }
+      .box-emerald-stroke { stroke: #059669; stroke-width: 1.5; }
+      .text-emerald { fill: #047857; }
+      .box-slate-fill { fill: #f1f5f9; }
+      .box-slate-stroke { stroke: #64748b; stroke-width: 1.5; }
+      .text-slate { fill: #475569; }
+      .tree-line { fill: none; stroke: #94a3b8; stroke-width: 1.5; }
+      .tree-arrow { fill: none; stroke: #94a3b8; stroke-width: 1.5; marker-end: url(#arrow); }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #0f172a; }
+        .text-title { fill: #e2e8f0; }
+        .text-label { fill: #e2e8f0; }
+        .text-sublabel { fill: #94a3b8; }
+        .text-anno { fill: #64748b; }
+        .box-violet-fill { fill: rgba(76,29,149,0.4); }
+        .box-violet-stroke { stroke: #a78bfa; }
+        .text-violet { fill: #c4b5fd; }
+        .box-emerald-fill { fill: rgba(6,78,59,0.4); }
+        .box-emerald-stroke { stroke: #34d399; }
+        .text-emerald { fill: #34d399; }
+        .box-slate-fill { fill: rgba(30,41,59,0.5); }
+        .box-slate-stroke { stroke: #94a3b8; }
+        .text-slate { fill: #94a3b8; }
+        .tree-line { stroke: #64748b; }
+        .tree-arrow { stroke: #64748b; }
+      }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" class="bg" rx="8"/>
+  <text x="280" y="28" text-anchor="middle" class="text-title">DataModel Runtime Storage</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Level 0: Root                            -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="150" y="45" width="260" height="38" rx="8" class="box-violet-fill box-violet-stroke"/>
+  <text x="280" y="62" text-anchor="middle" class="text-label text-violet">DataModel (Root)</text>
+  <text x="280" y="78" text-anchor="middle" class="text-sublabel">Container node</text>
+
+  <!-- Root → Categories: T-branch -->
+  <line x1="280" y1="83" x2="280" y2="95" class="tree-line"/>
+  <line x1="130" y1="95" x2="430" y2="95" class="tree-line"/>
+  <line x1="130" y1="95" x2="130" y2="115" class="tree-arrow"/>
+  <line x1="430" y1="95" x2="430" y2="115" class="tree-arrow"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Level 1: Category Nodes                 -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="40" y="115" width="180" height="38" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="130" y="132" text-anchor="middle" class="text-label text-emerald">Character</text>
+  <text x="130" y="148" text-anchor="middle" class="text-sublabel">Category Node</text>
+
+  <rect x="340" y="115" width="180" height="38" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="430" y="132" text-anchor="middle" class="text-label text-emerald">Item</text>
+  <text x="430" y="148" text-anchor="middle" class="text-sublabel">Category Node</text>
+
+  <!-- Character → Resources: T-branch -->
+  <line x1="130" y1="153" x2="130" y2="165" class="tree-line"/>
+  <line x1="67" y1="165" x2="193" y2="165" class="tree-line"/>
+  <line x1="67" y1="165" x2="67" y2="192" class="tree-arrow"/>
+  <line x1="193" y1="165" x2="193" y2="192" class="tree-arrow"/>
+
+  <!-- Item → Resources: T-branch -->
+  <line x1="430" y1="153" x2="430" y2="165" class="tree-line"/>
+  <line x1="367" y1="165" x2="493" y2="165" class="tree-line"/>
+  <line x1="367" y1="165" x2="367" y2="192" class="tree-arrow"/>
+  <line x1="493" y1="165" x2="493" y2="192" class="tree-arrow"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Level 2: Resources                      -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="19" y="192" width="96" height="28" rx="6" class="box-slate-fill box-slate-stroke"/>
+  <text x="67" y="211" text-anchor="middle" class="text-sublabel">Zisansi</text>
+
+  <rect x="145" y="192" width="96" height="28" rx="6" class="box-slate-fill box-slate-stroke"/>
+  <text x="193" y="211" text-anchor="middle" class="text-sublabel">Ersi</text>
+
+  <rect x="319" y="192" width="96" height="28" rx="6" class="box-slate-fill box-slate-stroke"/>
+  <text x="367" y="211" text-anchor="middle" class="text-sublabel">Longsword</text>
+
+  <rect x="445" y="192" width="96" height="28" rx="6" class="box-slate-fill box-slate-stroke"/>
+  <text x="493" y="211" text-anchor="middle" class="text-sublabel">...</text>
+
+  <!-- Footnotes -->
+  <text x="280" y="250" text-anchor="middle" class="text-anno">Each Resource stored with _uid() as dictionary key</text>
+  <text x="280" y="268" text-anchor="middle" class="text-anno">ModelService.Save() traverses the inheritance chain</text>
+</svg>

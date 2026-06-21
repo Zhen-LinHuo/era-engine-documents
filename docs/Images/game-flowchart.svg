@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 490" width="780" height="490">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .text-title { fill: #0f172a; font-family: sans-serif; font-size: 16; font-weight: bold; }
+      .text-label { fill: #0f172a; font-family: sans-serif; font-size: 13; font-weight: bold; }
+      .text-sublabel { fill: #475569; font-family: sans-serif; font-size: 11; }
+      .text-anno { fill: #64748b; font-family: sans-serif; font-size: 10; }
+      .box-cyan-fill { fill: #ecfeff; }
+      .box-cyan-stroke { stroke: #0891b2; stroke-width: 1.5; }
+      .text-cyan { fill: #0e7490; }
+      .box-emerald-fill { fill: #ecfdf5; }
+      .box-emerald-stroke { stroke: #059669; stroke-width: 1.5; }
+      .text-emerald { fill: #047857; }
+      .box-violet-fill { fill: #f5f3ff; }
+      .box-violet-stroke { stroke: #7c3aed; stroke-width: 1.5; }
+      .text-violet { fill: #6d28d9; }
+      .box-rose-fill { fill: #fff1f2; }
+      .box-rose-stroke { stroke: #be185d; stroke-width: 1.5; }
+      .text-rose { fill: #9d174d; }
+      .box-amber-fill { fill: #fffbeb; }
+      .box-amber-stroke { stroke: #d97706; stroke-width: 1.5; }
+      .text-amber { fill: #b45309; }
+      .box-slate-fill { fill: #f1f5f9; }
+      .box-slate-stroke { stroke: #64748b; stroke-width: 1.5; }
+      .text-slate { fill: #475569; }
+      .arrow { fill: none; stroke: #94a3b8; stroke-width: 1.5; marker-end: url(#arrow); }
+      .arrow-cyan { fill: none; stroke: #0891b2; stroke-width: 1.5; marker-end: url(#arrow-cyan); }
+      .arrow-emerald { fill: none; stroke: #059669; stroke-width: 1.5; marker-end: url(#arrow-emerald); }
+      .arrow-rose { fill: none; stroke: #be185d; stroke-width: 1.5; marker-end: url(#arrow-rose); }
+      .arrow-violet { fill: none; stroke: #7c3aed; stroke-width: 1.5; stroke-dasharray: 5 3; marker-end: url(#arrow-violet); }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #0f172a; }
+        .text-title { fill: #e2e8f0; }
+        .text-label { fill: #e2e8f0; }
+        .text-sublabel { fill: #94a3b8; }
+        .text-anno { fill: #64748b; }
+        .box-cyan-fill { fill: rgba(8,51,68,0.4); }
+        .box-cyan-stroke { stroke: #22d3ee; }
+        .text-cyan { fill: #22d3ee; }
+        .box-emerald-fill { fill: rgba(6,78,59,0.4); }
+        .box-emerald-stroke { stroke: #34d399; }
+        .text-emerald { fill: #34d399; }
+        .box-violet-fill { fill: rgba(76,29,149,0.4); }
+        .box-violet-stroke { stroke: #a78bfa; }
+        .text-violet { fill: #a78bfa; }
+        .box-rose-fill { fill: rgba(136,19,55,0.4); }
+        .box-rose-stroke { stroke: #fb7185; }
+        .text-rose { fill: #fb7185; }
+        .box-amber-fill { fill: rgba(120,53,15,0.3); }
+        .box-amber-stroke { stroke: #fbbf24; }
+        .text-amber { fill: #fbbf24; }
+        .box-slate-fill { fill: rgba(30,41,59,0.5); }
+        .box-slate-stroke { stroke: #94a3b8; }
+        .text-slate { fill: #94a3b8; }
+        .arrow { stroke: #64748b; }
+        .arrow-cyan { stroke: #22d3ee; }
+        .arrow-emerald { stroke: #34d399; }
+        .arrow-rose { stroke: #fb7185; }
+        .arrow-violet { stroke: #a78bfa; }
+      }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#0891b2"/>
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#059669"/>
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#be185d"/>
+    </marker>
+    <marker id="arrow-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" class="bg" rx="8"/>
+  <text x="390" y="30" text-anchor="middle" class="text-title">Adventure Tavern Game Flow</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Row 1: Title Screen (centered)           -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="270" y="50" width="240" height="42" rx="8" class="box-cyan-fill box-cyan-stroke"/>
+  <text x="390" y="66" text-anchor="middle" class="text-label text-cyan">main_state</text>
+  <text x="390" y="84" text-anchor="middle" class="text-sublabel">Title Screen</text>
+
+  <!-- Title → Row 2 (fan-out) -->
+  <path d="M 325 92 L 142 125" class="arrow-cyan" fill="none"/>
+  <text x="233" y="110" text-anchor="middle" class="text-anno">start</text>
+  <line x1="390" y1="92" x2="390" y2="125" class="arrow-cyan"/>
+  <text x="390" y="110" text-anchor="middle" class="text-anno">info</text>
+  <path d="M 455 92 L 638 125" class="arrow-rose" fill="none"/>
+  <text x="546" y="110" text-anchor="middle" class="text-anno">quit</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Row 2: Three sub-states (evenly spaced)  -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="47" y="125" width="190" height="40" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="142" y="140" text-anchor="middle" class="text-label text-emerald">character_select</text>
+  <text x="142" y="157" text-anchor="middle" class="text-sublabel">Pick Hero</text>
+
+  <rect x="295" y="125" width="190" height="40" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="390" y="140" text-anchor="middle" class="text-label text-emerald">how_to_play</text>
+  <text x="390" y="157" text-anchor="middle" class="text-sublabel">Info</text>
+
+  <rect x="543" y="125" width="190" height="40" rx="8" class="box-rose-fill box-rose-stroke"/>
+  <text x="638" y="140" text-anchor="middle" class="text-label text-rose">quit_game</text>
+  <text x="638" y="157" text-anchor="middle" class="text-sublabel">Goodbye</text>
+
+  <!-- character_select → tavern_main (straight down — aligned!) -->
+  <line x1="142" y1="165" x2="142" y2="210" class="arrow-emerald"/>
+  <text x="142" y="190" text-anchor="middle" class="text-anno">choose</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Row 3: tavern_main (aligned w/ char_sel)-->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="47" y="210" width="190" height="42" rx="8" class="box-cyan-fill box-cyan-stroke"/>
+  <text x="142" y="226" text-anchor="middle" class="text-label text-cyan">tavern_main</text>
+  <text x="142" y="244" text-anchor="middle" class="text-sublabel">Main Loop</text>
+
+  <!-- tavern_main → Row 4 (fan-out ⇩) -->
+  <path d="M 66 252 Q 75 276 84 300" class="arrow-cyan" fill="none"/>
+  <text x="75" y="280" text-anchor="middle" class="text-anno">talk</text>
+  <path d="M 104 252 Q 171 276 238 300" class="arrow-cyan" fill="none"/>
+  <text x="171" y="280" text-anchor="middle" class="text-anno">quests</text>
+  <path d="M 142 252 Q 266 276 389 300" class="arrow-cyan" fill="none"/>
+  <text x="266" y="280" text-anchor="middle" class="text-anno">buy</text>
+  <path d="M 180 252 Q 360 276 540 300" class="arrow-cyan" fill="none"/>
+  <text x="360" y="280" text-anchor="middle" class="text-anno">rest</text>
+  <path d="M 218 252 Q 456 276 695 300" class="arrow-rose" fill="none"/>
+  <text x="456" y="280" text-anchor="middle" class="text-anno">leave</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Row 4: Five sub-states (evenly spaced)   -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="22" y="300" width="125" height="38" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="84" y="314" text-anchor="middle" class="text-label text-emerald">tavern_talk</text>
+
+  <rect x="176" y="300" width="125" height="38" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="238" y="314" text-anchor="middle" class="text-label text-emerald">tavern_quests</text>
+
+  <rect x="327" y="300" width="125" height="38" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="389" y="314" text-anchor="middle" class="text-label text-emerald">tavern_buy</text>
+
+  <rect x="478" y="300" width="125" height="38" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <text x="540" y="314" text-anchor="middle" class="text-label text-emerald">tavern_rest</text>
+
+  <rect x="633" y="300" width="125" height="38" rx="8" class="box-rose-fill box-rose-stroke"/>
+  <text x="695" y="314" text-anchor="middle" class="text-label text-rose">tavern_leave</text>
+
+  <!-- Row 4 → Row 5 (fan-in ⇩ into centered box) -->
+  <path d="M 84 338 Q 203 361 318 385" class="arrow" fill="none"/>
+  <path d="M 238 338 Q 293 361 354 385" class="arrow" fill="none"/>
+  <line x1="389" y1="338" x2="389" y2="385" class="arrow"/>
+  <path d="M 540 338 Q 485 361 425 385" class="arrow" fill="none"/>
+  <path d="M 695 338 Q 575 361 461 385" class="arrow" fill="none"/>
+  <text x="389" y="365" text-anchor="middle" class="text-anno">all return via BTN()</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Row 5: Back to tavern_main (centered)    -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="289" y="385" width="200" height="38" rx="8" class="box-slate-fill box-slate-stroke"/>
+  <text x="389" y="399" text-anchor="middle" class="text-label text-slate">Back to tavern_main</text>
+  <text x="389" y="415" text-anchor="middle" class="text-sublabel">via BTN()</text>
+</svg>

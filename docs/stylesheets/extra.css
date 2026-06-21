@@ -1,0 +1,26 @@
+/* ERA-Engine Documentation Custom Styles */
+
+/* Improved diagram sizing */
+.md-content img[src*="architecture-overview"],
+.md-content img[src*="data-pipeline"],
+.md-content img[src*="state-machine"] {
+  max-width: 90%;
+  display: block;
+  margin: 1.5em auto;
+}
+
+/* Logo sizing */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  width: 1.8rem;
+  height: auto;
+}
+
+/* Heading hierarchy — preserve semantics, adjust visual weight */
+
+/* h4: method/property names in API docs — same size as h3 but not bold */
+.md-typeset h4 {
+  font-size: 1.1875em;
+  font-weight: 500;
+  letter-spacing: 0;
+}

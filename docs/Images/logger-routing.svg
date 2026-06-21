@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="640" height="280">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .text-title { fill: #0f172a; font-family: sans-serif; font-size: 16; font-weight: bold; }
+      .text-label { fill: #0f172a; font-family: sans-serif; font-size: 13; font-weight: bold; }
+      .text-sublabel { fill: #475569; font-family: sans-serif; font-size: 11; }
+      .text-mono { fill: #475569; font-family: monospace; font-size: 10; }
+      .box-cyan-fill { fill: #ecfeff; }
+      .box-cyan-stroke { stroke: #0891b2; stroke-width: 1.5; }
+      .text-cyan { fill: #0e7490; }
+      .box-emerald-fill { fill: #ecfdf5; }
+      .box-emerald-stroke { stroke: #059669; stroke-width: 1.5; }
+      .text-emerald { fill: #047857; }
+      .box-amber-fill { fill: #fffbeb; }
+      .box-amber-stroke { stroke: #d97706; stroke-width: 1.5; }
+      .text-amber { fill: #b45309; }
+      .box-rose-fill { fill: #fff1f2; }
+      .box-rose-stroke { stroke: #be185d; stroke-width: 1.5; }
+      .text-rose { fill: #9d174d; }
+      .box-slate-fill { fill: #f1f5f9; }
+      .box-slate-stroke { stroke: #64748b; stroke-width: 1.5; }
+      .text-slate { fill: #475569; }
+      .connector { fill: none; stroke: #94a3b8; stroke-width: 1.5; }
+      .arrow-cyan { fill: none; stroke: #0891b2; stroke-width: 1.5; marker-end: url(#arrow-cyan); }
+      .arrow-rose { fill: none; stroke: #be185d; stroke-width: 1.5; marker-end: url(#arrow-rose); }
+      .arrow-amber { fill: none; stroke: #d97706; stroke-width: 1.5; marker-end: url(#arrow-amber); }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #0f172a; }
+        .text-title { fill: #e2e8f0; }
+        .text-label { fill: #e2e8f0; }
+        .text-sublabel { fill: #94a3b8; }
+        .text-mono { fill: #94a3b8; }
+        .box-cyan-fill { fill: rgba(8,51,68,0.4); }
+        .box-cyan-stroke { stroke: #22d3ee; }
+        .text-cyan { fill: #22d3ee; }
+        .box-emerald-fill { fill: rgba(6,78,59,0.4); }
+        .box-emerald-stroke { stroke: #34d399; }
+        .text-emerald { fill: #34d399; }
+        .box-amber-fill { fill: rgba(120,53,15,0.3); }
+        .box-amber-stroke { stroke: #fbbf24; }
+        .text-amber { fill: #fbbf24; }
+        .box-rose-fill { fill: rgba(136,19,55,0.4); }
+        .box-rose-stroke { stroke: #fb7185; }
+        .text-rose { fill: #fb7185; }
+        .box-slate-fill { fill: rgba(30,41,59,0.5); }
+        .box-slate-stroke { stroke: #94a3b8; }
+        .text-slate { fill: #94a3b8; }
+        .connector { stroke: #64748b; }
+        .arrow-cyan { stroke: #22d3ee; }
+        .arrow-rose { stroke: #fb7185; }
+        .arrow-amber { stroke: #fbbf24; }
+      }
+    </style>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#0891b2"/>
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#be185d"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#d97706"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" class="bg" rx="8"/>
+  <text x="25" y="30" class="text-title">Logger Routing</text>
+
+  <!-- Top: Logger.Log() entry — h=48, 6px top padding -->
+  <rect x="80" y="40" width="480" height="48" rx="8" class="box-slate-fill box-slate-stroke"/>
+  <text x="320" y="59" text-anchor="middle" class="text-label text-slate">Logger.Log(level, msg)</text>
+  <text x="320" y="80" text-anchor="middle" class="text-sublabel">Filter check → Format → Route</text>
+
+  <!-- Branch lines -->
+  <line x1="320" y1="88" x2="320" y2="108" class="connector"/>
+  <line x1="100" y1="108" x2="540" y2="108" class="connector"/>
+  <line x1="100" y1="108" x2="100" y2="125" class="connector"/>
+  <line x1="320" y1="108" x2="320" y2="125" class="connector"/>
+  <line x1="540" y1="108" x2="540" y2="125" class="connector"/>
+
+  <!-- Middle row — h=48, 6px top padding -->
+  <rect x="25" y="125" width="150" height="48" rx="8" class="box-cyan-fill box-cyan-stroke"/>
+  <text x="100" y="144" text-anchor="middle" class="text-label text-cyan">Logger.Info()</text>
+  <text x="100" y="165" text-anchor="middle" class="text-sublabel">Normal info</text>
+
+  <rect x="245" y="125" width="150" height="48" rx="8" class="box-amber-fill box-amber-stroke"/>
+  <text x="320" y="144" text-anchor="middle" class="text-label text-amber">Logger.Warn()</text>
+  <text x="320" y="165" text-anchor="middle" class="text-sublabel">Potential issues</text>
+
+  <rect x="465" y="125" width="150" height="48" rx="8" class="box-rose-fill box-rose-stroke"/>
+  <text x="540" y="144" text-anchor="middle" class="text-label text-rose">Logger.Error()</text>
+  <text x="540" y="165" text-anchor="middle" class="text-sublabel">Errors &amp; exceptions</text>
+
+  <!-- Arrows down to GD.Print methods -->
+  <line x1="100" y1="173" x2="100" y2="200" class="arrow-cyan"/>
+  <line x1="320" y1="173" x2="320" y2="200" class="arrow-amber"/>
+  <line x1="540" y1="173" x2="540" y2="200" class="arrow-rose"/>
+
+  <!-- Bottom row — GD.Print outputs -->
+  <rect x="25" y="200" width="150" height="48" rx="8" class="box-cyan-fill box-cyan-stroke"/>
+  <text x="100" y="218" text-anchor="middle" class="text-label text-cyan">GD.Print()</text>
+  <text x="100" y="236" text-anchor="middle" class="text-sublabel">Plain text</text>
+
+  <rect x="245" y="200" width="150" height="48" rx="8" class="box-amber-fill box-amber-stroke"/>
+  <text x="320" y="218" text-anchor="middle" class="text-label text-amber">GD.PrintRich()</text>
+  <text x="320" y="236" text-anchor="middle" class="text-sublabel">Yellow highlight</text>
+
+  <rect x="465" y="200" width="150" height="48" rx="8" class="box-rose-fill box-rose-stroke"/>
+  <text x="540" y="218" text-anchor="middle" class="text-label text-rose">GD.PrintErr()</text>
+  <text x="540" y="236" text-anchor="middle" class="text-sublabel">Error output</text>
+</svg>

@@ -1,0 +1,108 @@
+site_name: ERA-Engine Documentation
+site_description: A C#-Based Engine for era-like games on Godot
+site_url: https://zhen-linhuo.github.io/era-engine-documents
+repo_url: https://github.com/Zhen-LinHuo/era-engine-documents
+repo_name: Zhen-LinHuo/era-engine-documents
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到亮色模式
+  favicon: images/logo.svg
+  logo: images/logo.svg
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Zhen-LinHuo/era-engine
+  generator: false
+
+copyright: Copyright &copy; 2025 Zhen-Lin Huo
+
+nav:
+  - 首页: index.md
+  - 基本介绍:
+    - introduction/index.md
+    - 项目概览: introduction/overview.md
+    - Godot 与脚本语言: introduction/godot-and-languages.md
+    - 核心概念: introduction/core-concepts.md
+    - 功能特性: introduction/features.md
+  - 入门教程:
+    - tutorial/index.md
+    - 环境搭建: tutorial/setup.md
+    - 显示文本: tutorial/display-text.md
+    - 添加按钮: tutorial/add-buttons.md
+    - 布局容器: tutorial/layout-boxes.md
+    - 添加数据: tutorial/add-data.md
+    - 完整示例: tutorial/complete-example.md
+  - 开发指南:
+    - guide/index.md
+    - 架构总览: guide/architecture-overview.md
+    - 启动流程: guide/startup-lifecycle.md
+    - 数据系统: guide/data-system.md
+    - 流程控制: guide/flow-system.md
+    - 视图系统: guide/view-system.md
+    - 模型层: guide/model-layer.md
+    - 常量与工具: guide/constants-and-utilities.md
+  - 进阶教程:
+    - advanced/index.md
+    - 自定义 UI 组件: advanced/custom-ui-components.md
+    - 存档与读档: advanced/save-and-load.md
+    - 动画与特效: advanced/animations-and-effects.md
+    - 口上文件格式: advanced/kojo-format.md
+    - 调试与日志: advanced/debugging-and-logging.md
+  - API 参考:
+    - api/index.md
+    - EraEngine: api/eraengine.md
+    - EraEngine.Core: api/eraengine-core.md
+  - 项目信息:
+    - project/index.md
+
+extra_css:
+  - stylesheets/extra.css

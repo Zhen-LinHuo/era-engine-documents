@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 545" width="600" height="545">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .text-title { fill: #0f172a; font-family: sans-serif; font-size: 16; font-weight: bold; }
+      .text-label { fill: #0f172a; font-family: sans-serif; font-size: 13; font-weight: bold; }
+      .text-sublabel { fill: #475569; font-family: sans-serif; font-size: 11; }
+      .text-anno { fill: #64748b; font-family: sans-serif; font-size: 10; }
+      .box-cyan-fill { fill: #ecfeff; }
+      .box-cyan-stroke { stroke: #0891b2; stroke-width: 1.5; }
+      .text-cyan { fill: #0e7490; }
+      .box-emerald-fill { fill: #ecfdf5; }
+      .box-emerald-stroke { stroke: #059669; stroke-width: 1.5; }
+      .text-emerald { fill: #047857; }
+      .box-slate-fill { fill: #f1f5f9; }
+      .box-slate-stroke { stroke: #64748b; stroke-width: 1.5; }
+      .text-slate { fill: #475569; }
+      .badge { stroke-width: 1.8; }
+      .badge-text { font-size: 11; font-weight: bold; }
+      .arrow { fill: none; stroke: #94a3b8; stroke-width: 1.5; marker-end: url(#arrow); }
+      .arrow-cyan { fill: none; stroke: #0891b2; stroke-width: 1.5; marker-end: url(#arrow-cyan); }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #0f172a; }
+        .text-title { fill: #e2e8f0; }
+        .text-label { fill: #e2e8f0; }
+        .text-sublabel { fill: #94a3b8; }
+        .text-anno { fill: #64748b; }
+        .box-cyan-fill { fill: rgba(8,51,68,0.4); }
+        .box-cyan-stroke { stroke: #22d3ee; }
+        .text-cyan { fill: #22d3ee; }
+        .box-emerald-fill { fill: rgba(6,78,59,0.4); }
+        .box-emerald-stroke { stroke: #34d399; }
+        .text-emerald { fill: #34d399; }
+        .box-slate-fill { fill: rgba(30,41,59,0.5); }
+        .box-slate-stroke { stroke: #94a3b8; }
+        .text-slate { fill: #94a3b8; }
+        .badge { stroke-width: 1.8; }
+        .arrow { stroke: #64748b; }
+        .arrow-cyan { stroke: #22d3ee; }
+      }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#0891b2"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" class="bg" rx="8"/>
+  <text x="300" y="30" text-anchor="middle" class="text-title">GameManager._Ready() Initialization</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Entry: _Ready()                          -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="240" y="48" width="120" height="40" rx="8" class="box-cyan-fill box-cyan-stroke"/>
+  <text x="300" y="66" text-anchor="middle" class="text-label text-cyan">_Ready()</text>
+  <text x="300" y="82" text-anchor="middle" class="text-sublabel">Entry</text>
+
+  <line x1="300" y1="88" x2="300" y2="110" class="arrow-cyan"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Step 1: Singleton Check (slate - guard) -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="140" y="110" width="320" height="48" rx="8" class="box-slate-fill box-slate-stroke"/>
+  <circle cx="158" cy="134" r="11" class="box-slate-fill box-slate-stroke badge"/>
+  <text x="158" y="139" text-anchor="middle" class="badge-text text-slate">1</text>
+  <text x="185" y="132" class="text-label text-slate">Singleton Check</text>
+  <text x="185" y="150" class="text-sublabel">QueueFree if instance already exists</text>
+
+  <line x1="300" y1="158" x2="300" y2="180" class="arrow"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Step 2: Init Controller                  -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="140" y="180" width="320" height="48" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <circle cx="158" cy="204" r="11" class="box-emerald-fill box-emerald-stroke badge"/>
+  <text x="158" y="209" text-anchor="middle" class="badge-text text-emerald">2</text>
+  <text x="185" y="202" class="text-label text-emerald">Init Controller</text>
+  <text x="185" y="220" class="text-sublabel">4 Service objects created</text>
+
+  <line x1="300" y1="228" x2="300" y2="250" class="arrow-emerald"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Step 3: Init Model                       -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="140" y="250" width="320" height="48" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <circle cx="158" cy="274" r="11" class="box-emerald-fill box-emerald-stroke badge"/>
+  <text x="158" y="279" text-anchor="middle" class="badge-text text-emerald">3</text>
+  <text x="185" y="272" class="text-label text-emerald">Init Model</text>
+  <text x="185" y="290" class="text-sublabel">DataModel + ViewModel loaded</text>
+
+  <line x1="300" y1="298" x2="300" y2="320" class="arrow-emerald"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Step 4: Init View                        -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="140" y="320" width="320" height="48" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <circle cx="158" cy="344" r="11" class="box-emerald-fill box-emerald-stroke badge"/>
+  <text x="158" y="349" text-anchor="middle" class="badge-text text-emerald">4</text>
+  <text x="185" y="342" class="text-label text-emerald">Init View</text>
+  <text x="185" y="360" class="text-sublabel">View scene duplicated from template</text>
+
+  <line x1="300" y1="368" x2="300" y2="390" class="arrow-emerald"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Step 5: Init Data                        -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="140" y="390" width="320" height="48" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <circle cx="158" cy="414" r="11" class="box-emerald-fill box-emerald-stroke badge"/>
+  <text x="158" y="419" text-anchor="middle" class="badge-text text-emerald">5</text>
+  <text x="185" y="412" class="text-label text-emerald">Init Data</text>
+  <text x="185" y="430" class="text-sublabel">Data pipeline: scan → sort → load</text>
+
+  <line x1="300" y1="438" x2="300" y2="460" class="arrow-emerald"/>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Step 6: Start Flow                       -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="140" y="460" width="320" height="48" rx="8" class="box-emerald-fill box-emerald-stroke"/>
+  <circle cx="158" cy="484" r="11" class="box-emerald-fill box-emerald-stroke badge"/>
+  <text x="158" y="489" text-anchor="middle" class="badge-text text-emerald">6</text>
+  <text x="185" y="482" class="text-label text-emerald">Start Flow</text>
+  <text x="185" y="500" class="text-sublabel">CallMainState() → main_state.gd</text>
+</svg>

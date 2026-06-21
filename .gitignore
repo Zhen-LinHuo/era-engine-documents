@@ -1,1 +1,7 @@
 ﻿.idea/
+__pycache__/
+# MkDocs build output
+site/
+.venv/
+# DocFX build output (legacy)
+_site/
